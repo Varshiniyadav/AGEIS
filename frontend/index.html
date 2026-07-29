@@ -3,95 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WBGT Simulator & Safety Advisor</title>
+    <title>WBGT Simulator Settings</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>WBGT Simulator Settings</h1>
-        <p class="subtitle">Indoor Parameter Selection & Safety Advisor</p>
+    <h1>WBGT Simulator Settings</h1>
+    <p class="subtitle">Indoor Parameter Selection & Safety Advisor</p>
 
-        <form id="wbgtForm">
-            <!-- Zone Override Dropdown -->
-            <div class="form-group" style="margin-bottom: 1.5rem;">
-                <label for="location_type">Select Zone Type (for Globe Temp offset)</label>
-                <select id="location_type" required>
-                    <option value="default">Default Zone</option>
-                    <option value="furnace">Furnace Area</option>
-                    <option value="metal_workshop">Metal Workshop Area</option>
-                    <option value="assembly">Assembly Area</option>
-                    <option value="warehouse">Warehouse Area</option>
-                    <option value="shaded">Shaded Area</option>
-                </select>
-            </div>
+    <form id="wbgtForm">
+        <!-- Zone Override Dropdown -->
+        <div class="form-group">
+            <label for="location_type">Select Zone Type (for Globe Temp offset):</label>
+            <select id="location_type" required>
+                <option value="default">Default Zone</option>
+                <option value="furnace">Furnace Area</option>
+                <option value="metal_workshop">Metal Workshop Area</option>
+                <option value="assembly">Assembly Area</option>
+                <option value="warehouse">Warehouse Area</option>
+                <option value="shaded">Shaded Area</option>
+            </select>
+        </div>
 
-            <p style="font-size: 0.95rem; font-weight: 500; color: var(--text-secondary); margin-bottom: 0.5rem;">
-                Select which parameters you want to simulate as "Available" from the sensor:
-            </p>
+        <p style="font-weight: bold; margin-bottom: 5px;">Select which parameters you want to simulate as "Available" from the sensor:</p>
 
-            <!-- Parameter: Relative Humidity (RH) -->
-            <div class="parameter-row">
-                <div class="parameter-header">
-                    <span class="parameter-title">Relative Humidity (RH)</span>
-                    <div class="radio-group">
-                        <input type="radio" id="rh_avail" name="rh_status" value="avail" checked>
-                        <label for="rh_avail" class="radio-label">Available</label>
-                        
-                        <input type="radio" id="rh_missing" name="rh_status" value="missing">
-                        <label for="rh_missing" class="radio-label">System Estimate</label>
-                    </div>
-                </div>
-                <div id="rhStatusText" class="helper-text">
-                    * The system will use the RH value directly from input.json.
+        <!-- Parameter: Relative Humidity (RH) -->
+        <div class="parameter-row">
+            <div class="parameter-header">
+                <span class="parameter-title">Relative Humidity (RH)</span>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" id="rh_avail" name="rh_status" value="avail" checked> Available
+                    </label>
+                    <label>
+                        <input type="radio" id="rh_missing" name="rh_status" value="missing"> System Estimate
+                    </label>
                 </div>
             </div>
-
-            <!-- Parameter: Globe Temperature (Tg) -->
-            <div class="parameter-row">
-                <div class="parameter-header">
-                    <span class="parameter-title">Globe Temperature (Tg)</span>
-                    <div class="radio-group">
-                        <input type="radio" id="tg_avail" name="tg_status" value="avail" checked>
-                        <label for="tg_avail" class="radio-label">Available</label>
-                        
-                        <input type="radio" id="tg_missing" name="tg_status" value="missing">
-                        <label for="tg_missing" class="radio-label">System Estimate</label>
-                    </div>
-                </div>
-                <div id="tgStatusText" class="helper-text">
-                    * The system will use the Globe Temp value directly from input.json.
-                </div>
+            <div id="rhStatusText" class="helper-text">
+                * The system will use the RH value directly from input.json.
             </div>
+        </div>
 
-            <!-- Parameter: Natural Wet Bulb Temperature (Tnwb) -->
-            <div class="parameter-row">
-                <div class="parameter-header">
-                    <span class="parameter-title">Natural Wet Bulb (Tnwb)</span>
-                    <div class="radio-group">
-                        <input type="radio" id="twnb_avail" name="twnb_status" value="avail" checked>
-                        <label for="twnb_avail" class="radio-label">Available</label>
-                        
-                        <input type="radio" id="twnb_missing" name="twnb_status" value="missing">
-                        <label for="twnb_missing" class="radio-label">System Calculate</label>
-                    </div>
-                </div>
-                <div id="twnbStatusText" class="helper-text">
-                    * The system will use the Wet Bulb value directly from input.json.
+        <!-- Parameter: Globe Temperature (Tg) -->
+        <div class="parameter-row">
+            <div class="parameter-header">
+                <span class="parameter-title">Globe Temperature (Tg)</span>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" id="tg_avail" name="tg_status" value="avail" checked> Available
+                    </label>
+                    <label>
+                        <input type="radio" id="tg_missing" name="tg_status" value="missing"> System Estimate
+                    </label>
                 </div>
             </div>
-
-            <!-- Submit Action Container -->
-            <div id="submitContainer">
-                <button type="submit" id="submitBtn" style="width: 100%;">Submit</button>
+            <div id="tgStatusText" class="helper-text">
+                * The system will use the Globe Temp value directly from input.json.
             </div>
+        </div>
 
-            <!-- Thank You Container -->
-            <div id="thankYouContainer" style="display: none; flex-direction: column; gap: 1rem; text-align: center; margin-top: 1rem; animation: fadeIn 0.4s ease-out;">
-                <p style="font-size: 1.25rem; font-weight: 600; color: var(--safe);">Thank you for submitting!</p>
-                <button type="button" id="editBtn" style="background: rgba(255, 255, 255, 0.05); color: var(--text-primary); border: 1px solid var(--card-border); box-shadow: none;">Make Changes / Resubmit</button>
+        <!-- Parameter: Natural Wet Bulb Temperature (Tnwb) -->
+        <div class="parameter-row">
+            <div class="parameter-header">
+                <span class="parameter-title">Natural Wet Bulb (Tnwb)</span>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" id="twnb_avail" name="twnb_status" value="avail" checked> Available
+                    </label>
+                    <label>
+                        <input type="radio" id="twnb_missing" name="twnb_status" value="missing"> System Calculate
+                    </label>
+                </div>
             </div>
-        </form>
-    </div>
+            <div id="twnbStatusText" class="helper-text">
+                * The system will use the Wet Bulb value directly from input.json.
+            </div>
+        </div>
+
+        <!-- Submit Action Container -->
+        <div id="submitContainer">
+            <button type="submit" id="submitBtn">Submit</button>
+        </div>
+
+        <!-- Thank You Container -->
+        <div id="thankYouContainer" style="display: none;">
+            <p>Thank you for submitting!</p>
+            <button type="button" id="editBtn">Make Changes / Resubmit</button>
+        </div>
+    </form>
 
     <script>
         const form = document.getElementById('wbgtForm');
@@ -130,10 +129,8 @@
                 radio.addEventListener('change', (e) => {
                     if (e.target.value === 'avail') {
                         statusText.textContent = `* The system will use the ${type} value directly from input.json.`;
-                        statusText.style.color = 'var(--text-secondary)';
                     } else {
                         statusText.textContent = `* The system will automatically estimate/calculate ${type} using fallback models.`;
-                        statusText.style.color = 'var(--accent)';
                     }
                 });
             });
@@ -194,7 +191,7 @@
 
                 // Show Thank You and Hide Submit
                 submitContainer.style.display = 'none';
-                thankYouContainer.style.display = 'flex';
+                thankYouContainer.style.display = 'block';
 
             } catch (err) {
                 console.error(err);

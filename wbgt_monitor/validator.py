@@ -28,6 +28,12 @@ def validate(reading: dict) -> dict:
     rh = reading.get("relative_humidity_pct")
     tg = reading.get("globe_temp_c")
 
+    # Treat 0, 0.0, or "0" as missing/None
+    if rh == 0 or rh == 0.0 or rh == "0" or rh == "0.0":
+        rh = None
+    if tg == 0 or tg == 0.0 or tg == "0" or tg == "0.0":
+        tg = None
+
     # --- Hard rule: air_temp_c must be present for indoor calculation ---
     if ta is None or ta == "":
         result["is_fault"] = True
