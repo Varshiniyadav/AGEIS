@@ -153,28 +153,46 @@ if __name__ == "__main__":
         report_module.start_scheduler()
         log.info("Report scheduler started")
 
-    # Read one JSON object from stdin (blocking).
-    raw = sys.stdin.read().strip()
-    if not raw:
-        msg = "Empty stdin — no reading provided."
-        log.error(msg)
-        print(json.dumps({"error": msg}))
-        sys.exit(1)
-
-    result = process_reading(raw)
-    print(json.dumps(result))
-    sys.stdout.flush()
-
-    if "error" in result and "classification" not in result:
-        log.debug(f"Pipeline completed with fault: {result.get('error')}")
-    else:
-        log.info(f"Pipeline completed OK | db_id={result.get('db_id')}")
-
-    # In long-lived mode, keep the process alive so the scheduler can fire.
     if long_lived:
         import time
-        try:
-            while True:
-                time.sleep(3600)
-        except KeyboardInterrupt:
-            log.info("WBGT Monitor shutting down (KeyboardInterrupt)")
+        import os
+        
+        # Load input.json from the parent directory
+        input_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "input.json")
+        if os.path.exists(input_path):
+            log.info(f"Simulation mode: Loading records from {input_path}")
+            try:
+                with open(input_path, "r", encoding="utf-8") as f:
+                    records = json.load(f)
+                
+                log.info(f"Loaded {len(records)} records. Starting infinite 10-second interval feed loop.")
+                while True:
+                    for i, record in enumerate(records):
+                        log.info(f"Simulation feeding record {i+1}/{len(records)}")
+                        result = process_reading(json.dumps(record))
+                        print(json.dumps(result))
+                        sys.stdout.flush()
+                        time.sleep(10)
+            except KeyboardInterrupt:
+                log.info("WBGT Monitor shutting down (KeyboardInterrupt)")
+            except Exception as exc:
+                log.error(f"Failed to run simulation feed loop: {exc}")
+        else:
+            log.error(f"input.json not found at {input_path}.")
+    else:
+        # Read one JSON object from stdin (blocking).
+        raw = sys.stdin.read().strip()
+        if not raw:
+            msg = "Empty stdin — no reading provided."
+            log.error(msg)
+            print(json.dumps({"error": msg}))
+            sys.exit(1)
+
+        result = process_reading(raw)
+        print(json.dumps(result))
+        sys.stdout.flush()
+
+        if "error" in result and "classification" not in result:
+            log.debug(f"Pipeline completed with fault: {result.get('error')}")
+        else:
+            log.info(f"Pipeline completed OK | db_id={result.get('db_id')}")

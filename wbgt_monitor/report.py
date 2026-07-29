@@ -24,17 +24,8 @@ load_dotenv()
 
 log = get_logger(__name__)
 
-REPORT_INTERVAL_HOURS = float(os.getenv("REPORT_INTERVAL_HOURS", "24"))
-REPORT_OUTPUT_DIR     = os.getenv("REPORT_OUTPUT_DIR", "./reports")
-
-RISK_LEVELS = ["SAFE", "CAUTION", "WARNING", "DANGER"]
-
-RISK_ACTION = {
-    "SAFE":    "Normal work, no restrictions",
-    "CAUTION": "Increase water breaks",
-    "WARNING": "Enforce work/rest cycles (50 min work, 10 min rest)",
-    "DANGER":  "Halt heavy work, mandatory rest, evacuate",
-}
+REPORT_INTERVAL_SECONDS = float(os.getenv("REPORT_INTERVAL_SECONDS", "10"))
+REPORT_OUTPUT_DIR       = os.getenv("REPORT_OUTPUT_DIR", "./reports")
 
 # CSV columns in output order
 CSV_FIELDS = [
@@ -83,22 +74,24 @@ def generate_report(start: datetime, end: datetime) -> list[dict]:
 
 def write_report(csv_rows: list[dict]) -> str:
     """
-    Write report rows to a timestamped tab-separated CSV file in REPORT_OUTPUT_DIR.
+    Write report rows to a single CSV file (wbgt_report.csv) in REPORT_OUTPUT_DIR.
 
     Returns the file path written.
     """
     os.makedirs(REPORT_OUTPUT_DIR, exist_ok=True)
 
-    ts = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
-    filename = f"wbgt_report_{ts}.csv"
+    filename = "wbgt_report.csv"
     filepath = os.path.join(REPORT_OUTPUT_DIR, filename)
 
-    with open(filepath, "w", newline="", encoding="utf-8") as fh:
+    file_exists = os.path.exists(filepath)
+
+    with open(filepath, "a", newline="", encoding="utf-8") as fh:
         writer = csv.DictWriter(fh, fieldnames=CSV_FIELDS, delimiter=",", extrasaction="ignore")
-        writer.writeheader()
+        if not file_exists:
+            writer.writeheader()
         writer.writerows(csv_rows)
 
-    log.info(f"[REPORT] CSV report written: {filepath} ({len(csv_rows)} rows)")
+    log.info(f"[REPORT] CSV report appended: {filepath} ({len(csv_rows)} rows)")
     return filepath
 
 
@@ -107,13 +100,13 @@ def write_report(csv_rows: list[dict]) -> str:
 # ---------------------------------------------------------------------------
 
 def _run_and_reschedule():
-    """Generate a report for the last REPORT_INTERVAL_HOURS window, save it,
+    """Generate a report for the last REPORT_INTERVAL_SECONDS window, save it,
     then schedule the next run."""
     now   = datetime.now(timezone.utc)
-    start = now - timedelta(hours=REPORT_INTERVAL_HOURS)
+    start = now - timedelta(seconds=REPORT_INTERVAL_SECONDS + 2)
 
     log.info(f"[REPORT] Scheduler triggered — generating report for last "
-             f"{REPORT_INTERVAL_HOURS}h window")
+             f"{REPORT_INTERVAL_SECONDS}s window")
     try:
         csv_rows = generate_report(start, now)
         path     = write_report(csv_rows)
@@ -127,17 +120,16 @@ def _run_and_reschedule():
 
 
 def _schedule_next():
-    interval_seconds = REPORT_INTERVAL_HOURS * 3600
-    t = threading.Timer(interval_seconds, _run_and_reschedule)
+    t = threading.Timer(REPORT_INTERVAL_SECONDS, _run_and_reschedule)
     t.daemon = True   # won't block clean process exit
     t.start()
-    log.debug(f"[REPORT] Next report scheduled in {REPORT_INTERVAL_HOURS}h")
+    log.debug(f"[REPORT] Next report scheduled in {REPORT_INTERVAL_SECONDS}s")
 
 
 def start_scheduler():
     """Call once from main.py to begin the periodic reporting loop."""
     _schedule_next()
-    msg = (f"[report] Scheduler started — report every {REPORT_INTERVAL_HOURS}h "
+    msg = (f"[report] Scheduler started — report every {REPORT_INTERVAL_SECONDS}s "
            f"into '{REPORT_OUTPUT_DIR}/'")
     print(msg, flush=True)
     log.info(msg)
