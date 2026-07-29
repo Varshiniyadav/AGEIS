@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WBGT Simulator & Safety Advisor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>WBGT Simulator Settings</h1>
+        <p class="subtitle">Indoor Parameter Selection & Safety Advisor</p>
+
+        <form id="wbgtForm">
+            <!-- Zone Override Dropdown -->
+            <div class="form-group" style="margin-bottom: 1.5rem;">
+                <label for="location_type">Select Zone Type (for Globe Temp offset)</label>
+                <select id="location_type" required>
+                    <option value="default">Default Zone</option>
+                    <option value="furnace">Furnace Area</option>
+                    <option value="metal_workshop">Metal Workshop Area</option>
+                    <option value="assembly">Assembly Area</option>
+                    <option value="warehouse">Warehouse Area</option>
+                    <option value="shaded">Shaded Area</option>
+                </select>
+            </div>
+
+            <p style="font-size: 0.95rem; font-weight: 500; color: var(--text-secondary); margin-bottom: 0.5rem;">
+                Select which parameters you want to simulate as "Available" from the sensor:
+            </p>
+
+            <!-- Parameter: Relative Humidity (RH) -->
+            <div class="parameter-row">
+                <div class="parameter-header">
+                    <span class="parameter-title">Relative Humidity (RH)</span>
+                    <div class="radio-group">
+                        <input type="radio" id="rh_avail" name="rh_status" value="avail" checked>
+                        <label for="rh_avail" class="radio-label">Available</label>
+                        
+                        <input type="radio" id="rh_missing" name="rh_status" value="missing">
+                        <label for="rh_missing" class="radio-label">System Estimate</label>
+                    </div>
+                </div>
+                <div id="rhStatusText" class="helper-text">
+                    * The system will use the RH value directly from input.json.
+                </div>
+            </div>
+
+            <!-- Parameter: Globe Temperature (Tg) -->
+            <div class="parameter-row">
+                <div class="parameter-header">
+                    <span class="parameter-title">Globe Temperature (Tg)</span>
+                    <div class="radio-group">
+                        <input type="radio" id="tg_avail" name="tg_status" value="avail" checked>
+                        <label for="tg_avail" class="radio-label">Available</label>
+                        
+                        <input type="radio" id="tg_missing" name="tg_status" value="missing">
+                        <label for="tg_missing" class="radio-label">System Estimate</label>
+                    </div>
+                </div>
+                <div id="tgStatusText" class="helper-text">
+                    * The system will use the Globe Temp value directly from input.json.
+                </div>
+            </div>
+
+            <!-- Parameter: Natural Wet Bulb Temperature (Tnwb) -->
+            <div class="parameter-row">
+                <div class="parameter-header">
+                    <span class="parameter-title">Natural Wet Bulb (Tnwb)</span>
+                    <div class="radio-group">
+                        <input type="radio" id="twnb_avail" name="twnb_status" value="avail" checked>
+                        <label for="twnb_avail" class="radio-label">Available</label>
+                        
+                        <input type="radio" id="twnb_missing" name="twnb_status" value="missing">
+                        <label for="twnb_missing" class="radio-label">System Calculate</label>
+                    </div>
+                </div>
+                <div id="twnbStatusText" class="helper-text">
+                    * The system will use the Wet Bulb value directly from input.json.
+                </div>
+            </div>
+
+            <!-- Submit Action Container -->
+            <div id="submitContainer">
+                <button type="submit" id="submitBtn" style="width: 100%;">Submit</button>
+            </div>
+
+            <!-- Thank You Container -->
+            <div id="thankYouContainer" style="display: none; flex-direction: column; gap: 1rem; text-align: center; margin-top: 1rem; animation: fadeIn 0.4s ease-out;">
+                <p style="font-size: 1.25rem; font-weight: 600; color: var(--safe);">Thank you for submitting!</p>
+                <button type="button" id="editBtn" style="background: rgba(255, 255, 255, 0.05); color: var(--text-primary); border: 1px solid var(--card-border); box-shadow: none;">Make Changes / Resubmit</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        const form = document.getElementById('wbgtForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const submitContainer = document.getElementById('submitContainer');
+        const thankYouContainer = document.getElementById('thankYouContainer');
+        const editBtn = document.getElementById('editBtn');
+
+        // Fetch current settings on page load to pre-populate form
+        async function loadCurrentSettings() {
+            try {
+                const response = await fetch('/settings');
+                const settings = await response.json();
+                
+                document.getElementById('location_type').value = settings.location_type || 'default';
+                
+                // Select proper radio buttons
+                document.getElementById(`rh_${settings.rh_status || 'avail'}`).checked = true;
+                document.getElementById(`tg_${settings.tg_status || 'avail'}`).checked = true;
+                document.getElementById(`twnb_${settings.twnb_status || 'avail'}`).checked = true;
+
+                // Trigger change event to update helper labels
+                document.querySelector('input[name="rh_status"]:checked').dispatchEvent(new Event('change'));
+                document.querySelector('input[name="tg_status"]:checked').dispatchEvent(new Event('change'));
+                document.querySelector('input[name="twnb_status"]:checked').dispatchEvent(new Event('change'));
+            } catch (err) {
+                console.error('Failed to load initial settings:', err);
+            }
+        }
+
+        // Toggle Status Helpers
+        function setupLabelToggle(statusName, textId, type) {
+            const radios = document.getElementsByName(statusName);
+            const statusText = document.getElementById(textId);
+            radios.forEach(radio => {
+                radio.addEventListener('change', (e) => {
+                    if (e.target.value === 'avail') {
+                        statusText.textContent = `* The system will use the ${type} value directly from input.json.`;
+                        statusText.style.color = 'var(--text-secondary)';
+                    } else {
+                        statusText.textContent = `* The system will automatically estimate/calculate ${type} using fallback models.`;
+                        statusText.style.color = 'var(--accent)';
+                    }
+                });
+            });
+        }
+
+        setupLabelToggle('rh_status', 'rhStatusText', 'Relative Humidity');
+        setupLabelToggle('tg_status', 'tgStatusText', 'Globe Temp');
+        setupLabelToggle('twnb_status', 'twnbStatusText', 'Wet Bulb');
+
+        function resetFormState() {
+            submitContainer.style.display = 'block';
+            thankYouContainer.style.display = 'none';
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Submit';
+        }
+
+        // Make changes / Resubmit button click
+        editBtn.addEventListener('click', async () => {
+            try {
+                await fetch('/stop', { method: 'POST' });
+            } catch (err) {
+                console.error('Failed to stop scheduler:', err);
+            }
+            resetFormState();
+        });
+
+        // Form submission
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Submitting...';
+
+            const payload = {
+                location_type: document.getElementById('location_type').value,
+                rh_status: document.querySelector('input[name="rh_status"]:checked').value,
+                tg_status: document.querySelector('input[name="tg_status"]:checked').value,
+                twnb_status: document.querySelector('input[name="twnb_status"]:checked').value
+            };
+
+            try {
+                const response = await fetch('/settings', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(payload)
+                });
+
+                const result = await response.json();
+                
+                if (!response.ok || result.error) {
+                    alert('Error: ' + (result.error || 'Server error occurred'));
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'Submit';
+                    return;
+                }
+
+                // Show Thank You and Hide Submit
+                submitContainer.style.display = 'none';
+                thankYouContainer.style.display = 'flex';
+
+            } catch (err) {
+                console.error(err);
+                alert('Connection error: ' + err.message);
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Submit';
+            }
+        });
+
+        // Load current config on load
+        loadCurrentSettings();
+    </script>
+</body>
+</html>

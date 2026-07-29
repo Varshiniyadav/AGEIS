@@ -616,3 +616,458 @@
 [2026-07-29 11:13:21] [WARNING ] [__main__] [DANGER ALERT] zone=EAF-Bay | wbgt=41.99 | Halt heavy work, mandatory rest, evacuate
 [2026-07-29 11:13:21] [INFO    ] [__main__] [DB] zone=EAF-Bay | db_id=350 | saved OK
 [2026-07-29 11:13:31] [INFO    ] [__main__] WBGT Monitor shutting down (KeyboardInterrupt)
+[2026-07-29 11:28:51] [INFO    ] [root] ============================================================
+[2026-07-29 11:28:51] [INFO    ] [root] WBGT Monitor logging started
+[2026-07-29 11:28:51] [INFO    ] [root] Log file : C:\Users\Varsh\Desktop\updated_agis\wbgt_monitor\logs\wbgt_monitor_20260729.log
+[2026-07-29 11:28:51] [INFO    ] [root] ============================================================
+[2026-07-29 11:28:51] [INFO    ] [__main__] WBGT Monitor starting up
+[2026-07-29 11:28:51] [INFO    ] [__main__] Database initialised
+[2026-07-29 11:28:51] [INFO    ] [__main__] [READING] zone=assembly | timestamp=2026-07-29T05:58:48.298Z
+[2026-07-29 11:28:51] [DEBUG   ] [__main__] [READING] raw={"zone_id":"assembly","timestamp":"2026-07-29T05:58:48.298Z","air_temp_c":25,"relative_humidity_pct":2,"globe_temp_c":30}
+[2026-07-29 11:28:51] [DEBUG   ] [__main__] [VALIDATE] zone=assembly | condition=ALL_DATA | missing=[] | flags=[]
+[2026-07-29 11:28:51] [INFO    ] [__main__] [CALC] zone=assembly | ta=25.0 | rh=2.0 | tg=30.0 | tnwb=7.8867 | wbgt=14.5207
+[2026-07-29 11:28:51] [DEBUG   ] [__main__] [CALC] data_quality={'ta': 'sensor', 'rh': 'sensor', 'tg': 'sensor', 'tnwb': 'calculated', 'wbgt': 'calculated'}
+[2026-07-29 11:28:51] [INFO    ] [__main__] [CLASSIFY] zone=assembly | wbgt=14.5207 | risk=SAFE | action=Normal work, no restrictions
+[2026-07-29 11:28:51] [INFO    ] [__main__] [DB] zone=assembly | db_id=351 | saved OK
+[2026-07-29 11:28:51] [INFO    ] [__main__] Pipeline completed OK | db_id=351
+[2026-07-29 11:30:05] [INFO    ] [root] ============================================================
+[2026-07-29 11:30:05] [INFO    ] [root] WBGT Monitor logging started
+[2026-07-29 11:30:05] [INFO    ] [root] Log file : C:\Users\Varsh\Desktop\updated_agis\wbgt_monitor\logs\wbgt_monitor_20260729.log
+[2026-07-29 11:30:05] [INFO    ] [root] ============================================================
+[2026-07-29 11:30:05] [INFO    ] [__main__] WBGT Monitor starting up
+[2026-07-29 11:30:06] [INFO    ] [__main__] Database initialised
+[2026-07-29 11:30:06] [INFO    ] [__main__] [READING] zone=assembly | timestamp=2026-07-29T06:00:05.301Z
+[2026-07-29 11:30:06] [DEBUG   ] [__main__] [READING] raw={"zone_id":"assembly","timestamp":"2026-07-29T06:00:05.301Z","air_temp_c":37,"relative_humidity_pct":47.5,"globe_temp_c":52.7,"wet_bulb_temperature":28}
+[2026-07-29 11:30:06] [DEBUG   ] [__main__] [VALIDATE] zone=assembly | condition=ALL_DATA | missing=[] | flags=[]
+[2026-07-29 11:30:06] [INFO    ] [__main__] [CALC] zone=assembly | ta=37.0 | rh=47.5 | tg=52.7 | tnwb=28.0 | wbgt=35.41
+[2026-07-29 11:30:06] [DEBUG   ] [__main__] [CALC] data_quality={'ta': 'sensor', 'rh': 'sensor', 'tg': 'sensor', 'tnwb': 'sensor', 'wbgt': 'calculated'}
+[2026-07-29 11:30:06] [INFO    ] [__main__] [CLASSIFY] zone=assembly | wbgt=35.41 | risk=DANGER | action=Halt heavy work, mandatory rest, evacuate
+[2026-07-29 11:30:06] [WARNING ] [__main__] [DANGER ALERT] zone=assembly | wbgt=35.41 | Halt heavy work, mandatory rest, evacuate
+[2026-07-29 11:30:06] [INFO    ] [__main__] [DB] zone=assembly | db_id=352 | saved OK
+[2026-07-29 11:30:06] [INFO    ] [__main__] Pipeline completed OK | db_id=352
+[2026-07-29 11:42:52] [INFO    ] [root] ============================================================
+[2026-07-29 11:42:52] [INFO    ] [root] WBGT Monitor logging started
+[2026-07-29 11:42:52] [INFO    ] [root] Log file : C:\Users\Varsh\Desktop\updated_agis\wbgt_monitor\logs\wbgt_monitor_20260729.log
+[2026-07-29 11:42:52] [INFO    ] [root] ============================================================
+[2026-07-29 11:42:52] [INFO    ] [__main__] WBGT Monitor starting up
+[2026-07-29 11:42:52] [INFO    ] [__main__] Database initialised
+[2026-07-29 11:42:52] [DEBUG   ] [report] [REPORT] Next report scheduled in 10.0s
+[2026-07-29 11:42:52] [INFO    ] [report] [report] Scheduler started — report every 10.0s into './reports/'
+[2026-07-29 11:42:52] [INFO    ] [__main__] Report scheduler started
+[2026-07-29 11:42:52] [INFO    ] [__main__] Simulation mode: Loading records from C:\Users\Varsh\Desktop\updated_agis\input.json
+[2026-07-29 11:42:52] [INFO    ] [__main__] Loaded 138 records. Starting infinite 10-second interval feed loop.
+[2026-07-29 11:42:52] [INFO    ] [__main__] Simulation feeding record 1/138
+[2026-07-29 11:42:52] [INFO    ] [__main__] [READING] zone=Furnace-1 | timestamp=2026-07-22T06:00:00
+[2026-07-29 11:42:52] [DEBUG   ] [__main__] [READING] raw={"timestamp": "2026-07-22T06:00:00", "factory": "Shree Metal Works", "zone": "Furnace-1", "temperature_unit": "celsius", "temperature": 37.0, "humidity": 47.5, "globe_temperature": 52.7, "wet_bulb_tem
+[2026-07-29 11:42:52] [DEBUG   ] [__main__] [VALIDATE] zone=Furnace-1 | condition=ALL_DATA | missing=[] | flags=[]
+[2026-07-29 11:42:52] [INFO    ] [__main__] [CALC] zone=Furnace-1 | ta=37.0 | rh=47.5 | tg=52.7 | tnwb=28.0 | wbgt=35.41
+[2026-07-29 11:42:52] [DEBUG   ] [__main__] [CALC] data_quality={'ta': 'sensor', 'rh': 'sensor', 'tg': 'sensor', 'tnwb': 'sensor', 'wbgt': 'calculated'}
+[2026-07-29 11:42:52] [INFO    ] [__main__] [CLASSIFY] zone=Furnace-1 | wbgt=35.41 | risk=DANGER | action=Halt heavy work, mandatory rest, evacuate
+[2026-07-29 11:42:52] [WARNING ] [__main__] [DANGER ALERT] zone=Furnace-1 | wbgt=35.41 | Halt heavy work, mandatory rest, evacuate
+[2026-07-29 11:42:52] [INFO    ] [__main__] [DB] zone=Furnace-1 | db_id=353 | saved OK
+[2026-07-29 11:43:02] [INFO    ] [report] [REPORT] Scheduler triggered — generating report for last 10.0s window
+[2026-07-29 11:43:02] [INFO    ] [__main__] Simulation feeding record 2/138
+[2026-07-29 11:43:02] [INFO    ] [__main__] [READING] zone=Fabrication-Shop | timestamp=2026-07-22T07:00:00
+[2026-07-29 11:43:02] [DEBUG   ] [__main__] [READING] raw={"timestamp": "2026-07-22T07:00:00", "factory": "Tata Steel", "zone": "Fabrication-Shop", "temperature_unit": "celsius", "temperature": 24.4, "humidity": 54.1, "globe_temperature": 25.7, "wet_bulb_tem
+[2026-07-29 11:43:02] [DEBUG   ] [__main__] [VALIDATE] zone=Fabrication-Shop | condition=ALL_DATA | missing=[] | flags=[]
+[2026-07-29 11:43:02] [INFO    ] [__main__] [CALC] zone=Fabrication-Shop | ta=24.4 | rh=54.1 | tg=25.7 | tnwb=17.7 | wbgt=20.1
+[2026-07-29 11:43:02] [DEBUG   ] [__main__] [CALC] data_quality={'ta': 'sensor', 'rh': 'sensor', 'tg': 'sensor', 'tnwb': 'sensor', 'wbgt': 'calculated'}
+[2026-07-29 11:43:02] [INFO    ] [__main__] [CLASSIFY] zone=Fabrication-Shop | wbgt=20.1 | risk=SAFE | action=Normal work, no restrictions
+[2026-07-29 11:43:02] [INFO    ] [report] [REPORT] Fetched 1 readings for window 2026-07-29T06:12:50.523705+00:00 → 2026-07-29T06:13:02.523705+00:00
+[2026-07-29 11:43:02] [INFO    ] [report] [REPORT] CSV report appended: ./reports\wbgt_report.csv (1 rows)
+[2026-07-29 11:43:02] [INFO    ] [report] [REPORT] Scheduler wrote: ./reports\wbgt_report.csv
+[2026-07-29 11:43:02] [DEBUG   ] [report] [REPORT] Next report scheduled in 10.0s
+[2026-07-29 11:43:02] [INFO    ] [__main__] [DB] zone=Fabrication-Shop | db_id=354 | saved OK
+[2026-07-29 11:43:12] [INFO    ] [report] [REPORT] Scheduler triggered — generating report for last 10.0s window
+[2026-07-29 11:43:12] [INFO    ] [__main__] Simulation feeding record 3/138
+[2026-07-29 11:43:12] [INFO    ] [__main__] [READING] zone=EAF-Bay | timestamp=2026-07-22T08:00:00
+[2026-07-29 11:43:12] [DEBUG   ] [__main__] [READING] raw={"timestamp": "2026-07-22T08:00:00", "factory": "JSW Steel", "zone": "EAF-Bay", "temperature_unit": "celsius", "temperature": 42.5, "humidity": 47.0, "globe_temperature": 63.9, "wet_bulb_temperature":
+[2026-07-29 11:43:12] [DEBUG   ] [__main__] [VALIDATE] zone=EAF-Bay | condition=ALL_DATA | missing=[] | flags=[]
+[2026-07-29 11:43:12] [INFO    ] [__main__] [CALC] zone=EAF-Bay | ta=42.5 | rh=47.0 | tg=63.9 | tnwb=32.6 | wbgt=41.99
+[2026-07-29 11:43:12] [DEBUG   ] [__main__] [CALC] data_quality={'ta': 'sensor', 'rh': 'sensor', 'tg': 'sensor', 'tnwb': 'sensor', 'wbgt': 'calculated'}
+[2026-07-29 11:43:12] [INFO    ] [__main__] [CLASSIFY] zone=EAF-Bay | wbgt=41.99 | risk=DANGER | action=Halt heavy work, mandatory rest, evacuate
+[2026-07-29 11:43:12] [WARNING ] [__main__] [DANGER ALERT] zone=EAF-Bay | wbgt=41.99 | Halt heavy work, mandatory rest, evacuate
+[2026-07-29 11:43:12] [INFO    ] [report] [REPORT] Fetched 1 readings for window 2026-07-29T06:13:00.604406+00:00 → 2026-07-29T06:13:12.604406+00:00
+[2026-07-29 11:43:12] [INFO    ] [report] [REPORT] CSV report appended: ./reports\wbgt_report.csv (1 rows)
+[2026-07-29 11:43:12] [INFO    ] [report] [REPORT] Scheduler wrote: ./reports\wbgt_report.csv
+[2026-07-29 11:43:12] [DEBUG   ] [report] [REPORT] Next report scheduled in 10.0s
+[2026-07-29 11:43:12] [INFO    ] [__main__] [DB] zone=EAF-Bay | db_id=355 | saved OK
+[2026-07-29 11:43:22] [INFO    ] [report] [REPORT] Scheduler triggered — generating report for last 10.0s window
+[2026-07-29 11:43:22] [INFO    ] [__main__] Simulation feeding record 4/138
+[2026-07-29 11:43:22] [INFO    ] [report] [REPORT] Fetched 1 readings for window 2026-07-29T06:13:10.619212+00:00 → 2026-07-29T06:13:22.619212+00:00
+[2026-07-29 11:43:22] [INFO    ] [__main__] [READING] zone=Loading-Dock | timestamp=2026-07-22T09:00:00
+[2026-07-29 11:43:22] [DEBUG   ] [__main__] [READING] raw={"timestamp": "2026-07-22T09:00:00", "factory": "Tata Steel", "zone": "Loading-Dock", "temperature_unit": "celsius", "temperature": 35.0, "humidity": 68.5, "globe_temperature": 37.5, "wet_bulb_tempera
+[2026-07-29 11:43:22] [DEBUG   ] [__main__] [VALIDATE] zone=Loading-Dock | condition=ALL_DATA | missing=[] | flags=[]
+[2026-07-29 11:43:22] [INFO    ] [__main__] [CALC] zone=Loading-Dock | ta=35.0 | rh=68.5 | tg=37.5 | tnwb=29.6 | wbgt=31.97
+[2026-07-29 11:43:22] [DEBUG   ] [__main__] [CALC] data_quality={'ta': 'sensor', 'rh': 'sensor', 'tg': 'sensor', 'tnwb': 'sensor', 'wbgt': 'calculated'}
+[2026-07-29 11:43:22] [INFO    ] [__main__] [CLASSIFY] zone=Loading-Dock | wbgt=31.97 | risk=DANGER | action=Halt heavy work, mandatory rest, evacuate
+[2026-07-29 11:43:22] [WARNING ] [__main__] [DANGER ALERT] zone=Loading-Dock | wbgt=31.97 | Halt heavy work, mandatory rest, evacuate
+[2026-07-29 11:43:22] [INFO    ] [report] [REPORT] CSV report appended: ./reports\wbgt_report.csv (1 rows)
+[2026-07-29 11:43:22] [INFO    ] [report] [REPORT] Scheduler wrote: ./reports\wbgt_report.csv
+[2026-07-29 11:43:22] [DEBUG   ] [report] [REPORT] Next report scheduled in 10.0s
+[2026-07-29 11:43:22] [INFO    ] [__main__] [DB] zone=Loading-Dock | db_id=356 | saved OK
+[2026-07-29 11:43:32] [INFO    ] [__main__] WBGT Monitor shutting down (KeyboardInterrupt)
+[2026-07-29 11:46:19] [INFO    ] [root] ============================================================
+[2026-07-29 11:46:19] [INFO    ] [root] WBGT Monitor logging started
+[2026-07-29 11:46:19] [INFO    ] [root] Log file : C:\Users\Varsh\Desktop\updated_agis\wbgt_monitor\logs\wbgt_monitor_20260729.log
+[2026-07-29 11:46:19] [INFO    ] [root] ============================================================
+[2026-07-29 11:46:19] [INFO    ] [__main__] WBGT Monitor starting up
+[2026-07-29 11:46:19] [INFO    ] [__main__] Database initialised
+[2026-07-29 11:46:19] [DEBUG   ] [report] [REPORT] Next report scheduled in 10.0s
+[2026-07-29 11:46:19] [INFO    ] [report] [report] Scheduler started — report every 10.0s into './reports/'
+[2026-07-29 11:46:19] [INFO    ] [__main__] Report scheduler started
+[2026-07-29 11:46:19] [INFO    ] [__main__] Simulation mode: Loading records from C:\Users\Varsh\Desktop\updated_agis\input.json
+[2026-07-29 11:46:19] [INFO    ] [__main__] Loaded 138 records. Starting infinite 10-second interval feed loop.
+[2026-07-29 11:46:19] [INFO    ] [__main__] Simulation feeding record 1/138 (Location Type: default)
+[2026-07-29 11:46:19] [INFO    ] [__main__] [READING] zone=Furnace-1 | timestamp=2026-07-22T06:00:00
+[2026-07-29 11:46:19] [DEBUG   ] [__main__] [READING] raw={"timestamp": "2026-07-22T06:00:00", "factory": "Shree Metal Works", "zone": "Furnace-1", "temperature_unit": "celsius", "temperature": 37.0, "humidity": 47.5, "globe_temperature": 52.7, "wet_bulb_tem
+[2026-07-29 11:46:19] [DEBUG   ] [__main__] [VALIDATE] zone=Furnace-1 | condition=ALL_DATA | missing=[] | flags=[]
+[2026-07-29 11:46:19] [INFO    ] [__main__] [CALC] zone=Furnace-1 | ta=37.0 | rh=47.5 | tg=52.7 | tnwb=28.0 | wbgt=35.41
+[2026-07-29 11:46:19] [DEBUG   ] [__main__] [CALC] data_quality={'ta': 'sensor', 'rh': 'sensor', 'tg': 'sensor', 'tnwb': 'sensor', 'wbgt': 'calculated'}
+[2026-07-29 11:46:19] [INFO    ] [__main__] [CLASSIFY] zone=Furnace-1 | wbgt=35.41 | risk=DANGER | action=Halt heavy work, mandatory rest, evacuate
+[2026-07-29 11:46:19] [WARNING ] [__main__] [DANGER ALERT] zone=Furnace-1 | wbgt=35.41 | Halt heavy work, mandatory rest, evacuate
+[2026-07-29 11:46:19] [INFO    ] [__main__] [DB] zone=Furnace-1 | db_id=357 | saved OK
+[2026-07-29 11:46:29] [INFO    ] [report] [REPORT] Scheduler triggered — generating report for last 10.0s window
+[2026-07-29 11:46:29] [INFO    ] [__main__] Simulation feeding record 2/138 (Location Type: default)
+[2026-07-29 11:46:29] [INFO    ] [__main__] [READING] zone=Fabrication-Shop | timestamp=2026-07-22T07:00:00
+[2026-07-29 11:46:29] [DEBUG   ] [__main__] [READING] raw={"timestamp": "2026-07-22T07:00:00", "factory": "Tata Steel", "zone": "Fabrication-Shop", "temperature_unit": "celsius", "temperature": 24.4, "humidity": 54.1, "globe_temperature": 25.7, "wet_bulb_tem
+[2026-07-29 11:46:29] [DEBUG   ] [__main__] [VALIDATE] zone=Fabrication-Shop | condition=ALL_DATA | missing=[] | flags=[]
+[2026-07-29 11:46:29] [INFO    ] [__main__] [CALC] zone=Fabrication-Shop | ta=24.4 | rh=54.1 | tg=25.7 | tnwb=17.7 | wbgt=20.1
+[2026-07-29 11:46:29] [DEBUG   ] [__main__] [CALC] data_quality={'ta': 'sensor', 'rh': 'sensor', 'tg': 'sensor', 'tnwb': 'sensor', 'wbgt': 'calculated'}
+[2026-07-29 11:46:29] [INFO    ] [__main__] [CLASSIFY] zone=Fabrication-Shop | wbgt=20.1 | risk=SAFE | action=Normal work, no restrictions
+[2026-07-29 11:46:29] [INFO    ] [report] [REPORT] Fetched 1 readings for window 2026-07-29T06:16:17.535484+00:00 → 2026-07-29T06:16:29.535484+00:00
+[2026-07-29 11:46:29] [INFO    ] [report] [REPORT] CSV report appended: ./reports\wbgt_report.csv (1 rows)
+[2026-07-29 11:46:29] [INFO    ] [report] [REPORT] Scheduler wrote: ./reports\wbgt_report.csv
+[2026-07-29 11:46:29] [DEBUG   ] [report] [REPORT] Next report scheduled in 10.0s
+[2026-07-29 11:46:29] [INFO    ] [__main__] [DB] zone=Fabrication-Shop | db_id=358 | saved OK
+[2026-07-29 11:47:21] [INFO    ] [root] ============================================================
+[2026-07-29 11:47:21] [INFO    ] [root] WBGT Monitor logging started
+[2026-07-29 11:47:21] [INFO    ] [root] Log file : C:\Users\Varsh\Desktop\updated_agis\wbgt_monitor\logs\wbgt_monitor_20260729.log
+[2026-07-29 11:47:21] [INFO    ] [root] ============================================================
+[2026-07-29 11:47:21] [INFO    ] [__main__] WBGT Monitor starting up
+[2026-07-29 11:47:21] [INFO    ] [__main__] Database initialised
+[2026-07-29 11:47:21] [DEBUG   ] [report] [REPORT] Next report scheduled in 10.0s
+[2026-07-29 11:47:21] [INFO    ] [report] [report] Scheduler started — report every 10.0s into './reports/'
+[2026-07-29 11:47:21] [INFO    ] [__main__] Report scheduler started
+[2026-07-29 11:47:21] [INFO    ] [__main__] Simulation mode: Loading records from C:\Users\Varsh\Desktop\updated_agis\input.json
+[2026-07-29 11:47:21] [INFO    ] [__main__] Loaded 138 records. Starting infinite 10-second interval feed loop.
+[2026-07-29 11:47:21] [INFO    ] [__main__] Simulation feeding record 1/138 (Location Type: default)
+[2026-07-29 11:47:21] [INFO    ] [__main__] [READING] zone=Furnace-1 | timestamp=2026-07-22T06:00:00
+[2026-07-29 11:47:21] [DEBUG   ] [__main__] [READING] raw={"timestamp": "2026-07-22T06:00:00", "factory": "Shree Metal Works", "zone": "Furnace-1", "temperature_unit": "celsius", "temperature": 37.0, "humidity": 47.5, "globe_temperature": 52.7, "wet_bulb_tem
+[2026-07-29 11:47:21] [DEBUG   ] [__main__] [VALIDATE] zone=Furnace-1 | condition=ALL_DATA | missing=[] | flags=[]
+[2026-07-29 11:47:21] [INFO    ] [__main__] [CALC] zone=Furnace-1 | ta=37.0 | rh=47.5 | tg=52.7 | tnwb=28.0 | wbgt=35.41
+[2026-07-29 11:47:21] [DEBUG   ] [__main__] [CALC] data_quality={'ta': 'sensor', 'rh': 'sensor', 'tg': 'sensor', 'tnwb': 'sensor', 'wbgt': 'calculated'}
+[2026-07-29 11:47:21] [INFO    ] [__main__] [CLASSIFY] zone=Furnace-1 | wbgt=35.41 | risk=DANGER | action=Halt heavy work, mandatory rest, evacuate
+[2026-07-29 11:47:21] [WARNING ] [__main__] [DANGER ALERT] zone=Furnace-1 | wbgt=35.41 | Halt heavy work, mandatory rest, evacuate
+[2026-07-29 11:47:21] [INFO    ] [__main__] [DB] zone=Furnace-1 | db_id=359 | saved OK
+[2026-07-29 11:47:31] [INFO    ] [report] [REPORT] Scheduler triggered — generating report for last 10.0s window
+[2026-07-29 11:47:31] [INFO    ] [__main__] Simulation feeding record 2/138 (Location Type: default)
+[2026-07-29 11:47:31] [INFO    ] [__main__] [READING] zone=Fabrication-Shop | timestamp=2026-07-22T07:00:00
+[2026-07-29 11:47:31] [DEBUG   ] [__main__] [READING] raw={"timestamp": "2026-07-22T07:00:00", "factory": "Tata Steel", "zone": "Fabrication-Shop", "temperature_unit": "celsius", "temperature": 24.4, "humidity": 54.1, "globe_temperature": 25.7, "wet_bulb_tem
+[2026-07-29 11:47:31] [DEBUG   ] [__main__] [VALIDATE] zone=Fabrication-Shop | condition=ALL_DATA | missing=[] | flags=[]
+[2026-07-29 11:47:31] [INFO    ] [__main__] [CALC] zone=Fabrication-Shop | ta=24.4 | rh=54.1 | tg=25.7 | tnwb=17.7 | wbgt=20.1
+[2026-07-29 11:47:31] [DEBUG   ] [__main__] [CALC] data_quality={'ta': 'sensor', 'rh': 'sensor', 'tg': 'sensor', 'tnwb': 'sensor', 'wbgt': 'calculated'}
+[2026-07-29 11:47:31] [INFO    ] [__main__] [CLASSIFY] zone=Fabrication-Shop | wbgt=20.1 | risk=SAFE | action=Normal work, no restrictions
+[2026-07-29 11:47:31] [INFO    ] [report] [REPORT] Fetched 1 readings for window 2026-07-29T06:17:19.244393+00:00 → 2026-07-29T06:17:31.244393+00:00
+[2026-07-29 11:47:31] [INFO    ] [report] [REPORT] CSV report appended: ./reports\wbgt_report.csv (1 rows)
+[2026-07-29 11:47:31] [INFO    ] [report] [REPORT] Scheduler wrote: ./reports\wbgt_report.csv
+[2026-07-29 11:47:31] [DEBUG   ] [report] [REPORT] Next report scheduled in 10.0s
+[2026-07-29 11:47:31] [INFO    ] [__main__] [DB] zone=Fabrication-Shop | db_id=360 | saved OK
+[2026-07-29 11:47:41] [INFO    ] [report] [REPORT] Scheduler triggered — generating report for last 10.0s window
+[2026-07-29 11:47:41] [INFO    ] [__main__] Simulation feeding record 3/138 (Location Type: default)
+[2026-07-29 11:47:41] [INFO    ] [__main__] [READING] zone=EAF-Bay | timestamp=2026-07-22T08:00:00
+[2026-07-29 11:47:41] [DEBUG   ] [__main__] [READING] raw={"timestamp": "2026-07-22T08:00:00", "factory": "JSW Steel", "zone": "EAF-Bay", "temperature_unit": "celsius", "temperature": 42.5, "humidity": 47.0, "globe_temperature": 63.9, "wet_bulb_temperature":
+[2026-07-29 11:47:41] [DEBUG   ] [__main__] [VALIDATE] zone=EAF-Bay | condition=ALL_DATA | missing=[] | flags=[]
+[2026-07-29 11:47:41] [INFO    ] [__main__] [CALC] zone=EAF-Bay | ta=42.5 | rh=47.0 | tg=63.9 | tnwb=32.6 | wbgt=41.99
+[2026-07-29 11:47:41] [DEBUG   ] [__main__] [CALC] data_quality={'ta': 'sensor', 'rh': 'sensor', 'tg': 'sensor', 'tnwb': 'sensor', 'wbgt': 'calculated'}
+[2026-07-29 11:47:41] [INFO    ] [__main__] [CLASSIFY] zone=EAF-Bay | wbgt=41.99 | risk=DANGER | action=Halt heavy work, mandatory rest, evacuate
+[2026-07-29 11:47:41] [WARNING ] [__main__] [DANGER ALERT] zone=EAF-Bay | wbgt=41.99 | Halt heavy work, mandatory rest, evacuate
+[2026-07-29 11:47:41] [INFO    ] [report] [REPORT] Fetched 1 readings for window 2026-07-29T06:17:29.296775+00:00 → 2026-07-29T06:17:41.296775+00:00
+[2026-07-29 11:47:41] [INFO    ] [report] [REPORT] CSV report appended: ./reports\wbgt_report.csv (1 rows)
+[2026-07-29 11:47:41] [INFO    ] [report] [REPORT] Scheduler wrote: ./reports\wbgt_report.csv
+[2026-07-29 11:47:41] [DEBUG   ] [report] [REPORT] Next report scheduled in 10.0s
+[2026-07-29 11:47:41] [INFO    ] [__main__] [DB] zone=EAF-Bay | db_id=361 | saved OK
+[2026-07-29 11:47:51] [INFO    ] [report] [REPORT] Scheduler triggered — generating report for last 10.0s window
+[2026-07-29 11:47:51] [INFO    ] [report] [REPORT] Fetched 1 readings for window 2026-07-29T06:17:39.319702+00:00 → 2026-07-29T06:17:51.319702+00:00
+[2026-07-29 11:47:51] [INFO    ] [report] [REPORT] CSV report appended: ./reports\wbgt_report.csv (1 rows)
+[2026-07-29 11:47:51] [INFO    ] [report] [REPORT] Scheduler wrote: ./reports\wbgt_report.csv
+[2026-07-29 11:47:51] [DEBUG   ] [report] [REPORT] Next report scheduled in 10.0s
+[2026-07-29 11:47:51] [INFO    ] [__main__] Simulation feeding record 4/138 (Location Type: default)
+[2026-07-29 11:47:51] [INFO    ] [__main__] [READING] zone=Loading-Dock | timestamp=2026-07-22T09:00:00
+[2026-07-29 11:47:51] [DEBUG   ] [__main__] [READING] raw={"timestamp": "2026-07-22T09:00:00", "factory": "Tata Steel", "zone": "Loading-Dock", "temperature_unit": "celsius", "temperature": 35.0, "humidity": 68.5, "globe_temperature": 37.5, "wet_bulb_tempera
+[2026-07-29 11:47:51] [DEBUG   ] [__main__] [VALIDATE] zone=Loading-Dock | condition=ALL_DATA | missing=[] | flags=[]
+[2026-07-29 11:47:51] [INFO    ] [__main__] [CALC] zone=Loading-Dock | ta=35.0 | rh=68.5 | tg=37.5 | tnwb=29.6 | wbgt=31.97
+[2026-07-29 11:47:51] [DEBUG   ] [__main__] [CALC] data_quality={'ta': 'sensor', 'rh': 'sensor', 'tg': 'sensor', 'tnwb': 'sensor', 'wbgt': 'calculated'}
+[2026-07-29 11:47:51] [INFO    ] [__main__] [CLASSIFY] zone=Loading-Dock | wbgt=31.97 | risk=DANGER | action=Halt heavy work, mandatory rest, evacuate
+[2026-07-29 11:47:51] [WARNING ] [__main__] [DANGER ALERT] zone=Loading-Dock | wbgt=31.97 | Halt heavy work, mandatory rest, evacuate
+[2026-07-29 11:47:51] [INFO    ] [__main__] [DB] zone=Loading-Dock | db_id=362 | saved OK
+[2026-07-29 11:47:53] [INFO    ] [__main__] WBGT Monitor shutting down (KeyboardInterrupt)
+[2026-07-29 11:50:09] [INFO    ] [root] ============================================================
+[2026-07-29 11:50:09] [INFO    ] [root] WBGT Monitor logging started
+[2026-07-29 11:50:09] [INFO    ] [root] Log file : C:\Users\Varsh\Desktop\updated_agis\wbgt_monitor\logs\wbgt_monitor_20260729.log
+[2026-07-29 11:50:09] [INFO    ] [root] ============================================================
+[2026-07-29 11:50:09] [INFO    ] [__main__] WBGT Monitor starting up
+[2026-07-29 11:50:09] [INFO    ] [__main__] Database initialised
+[2026-07-29 11:50:09] [DEBUG   ] [report] [REPORT] Next report scheduled in 10.0s
+[2026-07-29 11:50:09] [INFO    ] [report] [report] Scheduler started — report every 10.0s into './reports/'
+[2026-07-29 11:50:09] [INFO    ] [__main__] Report scheduler started
+[2026-07-29 11:50:09] [INFO    ] [__main__] Simulation mode: Loading records from C:\Users\Varsh\Desktop\updated_agis\input.json
+[2026-07-29 11:50:09] [INFO    ] [__main__] Loaded 138 records. Starting infinite 10-second interval feed loop.
+[2026-07-29 11:50:09] [INFO    ] [__main__] Simulation feeding record 1/138 (Location Type: assembly)
+[2026-07-29 11:50:09] [INFO    ] [__main__] [READING] zone=Furnace-1 | timestamp=2026-07-22T06:00:00
+[2026-07-29 11:50:09] [DEBUG   ] [__main__] [READING] raw={"timestamp": "2026-07-22T06:00:00", "factory": "Shree Metal Works", "zone": "Furnace-1", "temperature_unit": "celsius", "temperature": 37.0, "humidity": 47.5, "globe_temperature": 52.7, "wet_bulb_tem
+[2026-07-29 11:50:09] [DEBUG   ] [__main__] [VALIDATE] zone=Furnace-1 | condition=ALL_DATA | missing=[] | flags=[]
+[2026-07-29 11:50:09] [INFO    ] [__main__] [CALC] zone=Furnace-1 | ta=37.0 | rh=47.5 | tg=52.7 | tnwb=28.0 | wbgt=35.41
+[2026-07-29 11:50:09] [DEBUG   ] [__main__] [CALC] data_quality={'ta': 'sensor', 'rh': 'sensor', 'tg': 'sensor', 'tnwb': 'sensor', 'wbgt': 'calculated'}
+[2026-07-29 11:50:09] [INFO    ] [__main__] [CLASSIFY] zone=Furnace-1 | wbgt=35.41 | risk=DANGER | action=Halt heavy work, mandatory rest, evacuate
+[2026-07-29 11:50:09] [WARNING ] [__main__] [DANGER ALERT] zone=Furnace-1 | wbgt=35.41 | Halt heavy work, mandatory rest, evacuate
+[2026-07-29 11:50:09] [INFO    ] [__main__] [DB] zone=Furnace-1 | db_id=363 | saved OK
+[2026-07-29 11:50:19] [INFO    ] [report] [REPORT] Scheduler triggered — generating report for last 10.0s window
+[2026-07-29 11:50:19] [INFO    ] [report] [REPORT] Fetched 1 readings for window 2026-07-29T06:20:07.429311+00:00 → 2026-07-29T06:20:19.429311+00:00
+[2026-07-29 11:50:19] [INFO    ] [report] [REPORT] CSV report appended: ./reports\wbgt_report.csv (1 rows)
+[2026-07-29 11:50:19] [INFO    ] [report] [REPORT] Scheduler wrote: ./reports\wbgt_report.csv
+[2026-07-29 11:50:19] [INFO    ] [__main__] Simulation feeding record 2/138 (Location Type: assembly)
+[2026-07-29 11:50:19] [DEBUG   ] [report] [REPORT] Next report scheduled in 10.0s
+[2026-07-29 11:50:19] [INFO    ] [__main__] [READING] zone=Fabrication-Shop | timestamp=2026-07-22T07:00:00
+[2026-07-29 11:50:19] [DEBUG   ] [__main__] [READING] raw={"timestamp": "2026-07-22T07:00:00", "factory": "Tata Steel", "zone": "Fabrication-Shop", "temperature_unit": "celsius", "temperature": 24.4, "humidity": 54.1, "globe_temperature": 25.7, "wet_bulb_tem
+[2026-07-29 11:50:19] [DEBUG   ] [__main__] [VALIDATE] zone=Fabrication-Shop | condition=ALL_DATA | missing=[] | flags=[]
+[2026-07-29 11:50:19] [INFO    ] [__main__] [CALC] zone=Fabrication-Shop | ta=24.4 | rh=54.1 | tg=25.7 | tnwb=17.7 | wbgt=20.1
+[2026-07-29 11:50:19] [DEBUG   ] [__main__] [CALC] data_quality={'ta': 'sensor', 'rh': 'sensor', 'tg': 'sensor', 'tnwb': 'sensor', 'wbgt': 'calculated'}
+[2026-07-29 11:50:19] [INFO    ] [__main__] [CLASSIFY] zone=Fabrication-Shop | wbgt=20.1 | risk=SAFE | action=Normal work, no restrictions
+[2026-07-29 11:50:19] [INFO    ] [__main__] [DB] zone=Fabrication-Shop | db_id=364 | saved OK
+[2026-07-29 11:50:29] [INFO    ] [report] [REPORT] Scheduler triggered — generating report for last 10.0s window
+[2026-07-29 11:50:29] [INFO    ] [report] [REPORT] Fetched 1 readings for window 2026-07-29T06:20:17.447631+00:00 → 2026-07-29T06:20:29.447631+00:00
+[2026-07-29 11:50:29] [INFO    ] [report] [REPORT] CSV report appended: ./reports\wbgt_report.csv (1 rows)
+[2026-07-29 11:50:29] [INFO    ] [report] [REPORT] Scheduler wrote: ./reports\wbgt_report.csv
+[2026-07-29 11:50:29] [DEBUG   ] [report] [REPORT] Next report scheduled in 10.0s
+[2026-07-29 11:50:29] [INFO    ] [__main__] Simulation feeding record 3/138 (Location Type: assembly)
+[2026-07-29 11:50:29] [INFO    ] [__main__] [READING] zone=EAF-Bay | timestamp=2026-07-22T08:00:00
+[2026-07-29 11:50:29] [DEBUG   ] [__main__] [READING] raw={"timestamp": "2026-07-22T08:00:00", "factory": "JSW Steel", "zone": "EAF-Bay", "temperature_unit": "celsius", "temperature": 42.5, "humidity": 47.0, "globe_temperature": 63.9, "wet_bulb_temperature":
+[2026-07-29 11:50:29] [DEBUG   ] [__main__] [VALIDATE] zone=EAF-Bay | condition=ALL_DATA | missing=[] | flags=[]
+[2026-07-29 11:50:29] [INFO    ] [__main__] [CALC] zone=EAF-Bay | ta=42.5 | rh=47.0 | tg=63.9 | tnwb=32.6 | wbgt=41.99
+[2026-07-29 11:50:29] [DEBUG   ] [__main__] [CALC] data_quality={'ta': 'sensor', 'rh': 'sensor', 'tg': 'sensor', 'tnwb': 'sensor', 'wbgt': 'calculated'}
+[2026-07-29 11:50:29] [INFO    ] [__main__] [CLASSIFY] zone=EAF-Bay | wbgt=41.99 | risk=DANGER | action=Halt heavy work, mandatory rest, evacuate
+[2026-07-29 11:50:29] [WARNING ] [__main__] [DANGER ALERT] zone=EAF-Bay | wbgt=41.99 | Halt heavy work, mandatory rest, evacuate
+[2026-07-29 11:50:29] [INFO    ] [__main__] [DB] zone=EAF-Bay | db_id=365 | saved OK
+[2026-07-29 11:50:39] [INFO    ] [report] [REPORT] Scheduler triggered — generating report for last 10.0s window
+[2026-07-29 11:50:39] [INFO    ] [report] [REPORT] Fetched 1 readings for window 2026-07-29T06:20:27.470724+00:00 → 2026-07-29T06:20:39.470724+00:00
+[2026-07-29 11:50:39] [INFO    ] [report] [REPORT] CSV report appended: ./reports\wbgt_report.csv (1 rows)
+[2026-07-29 11:50:39] [INFO    ] [report] [REPORT] Scheduler wrote: ./reports\wbgt_report.csv
+[2026-07-29 11:50:39] [DEBUG   ] [report] [REPORT] Next report scheduled in 10.0s
+[2026-07-29 11:50:39] [INFO    ] [__main__] Simulation feeding record 4/138 (Location Type: assembly)
+[2026-07-29 11:50:39] [INFO    ] [__main__] [READING] zone=Loading-Dock | timestamp=2026-07-22T09:00:00
+[2026-07-29 11:50:39] [DEBUG   ] [__main__] [READING] raw={"timestamp": "2026-07-22T09:00:00", "factory": "Tata Steel", "zone": "Loading-Dock", "temperature_unit": "celsius", "temperature": 35.0, "humidity": 68.5, "globe_temperature": 37.5, "wet_bulb_tempera
+[2026-07-29 11:50:39] [DEBUG   ] [__main__] [VALIDATE] zone=Loading-Dock | condition=ALL_DATA | missing=[] | flags=[]
+[2026-07-29 11:50:39] [INFO    ] [__main__] [CALC] zone=Loading-Dock | ta=35.0 | rh=68.5 | tg=37.5 | tnwb=29.6 | wbgt=31.97
+[2026-07-29 11:50:39] [DEBUG   ] [__main__] [CALC] data_quality={'ta': 'sensor', 'rh': 'sensor', 'tg': 'sensor', 'tnwb': 'sensor', 'wbgt': 'calculated'}
+[2026-07-29 11:50:39] [INFO    ] [__main__] [CLASSIFY] zone=Loading-Dock | wbgt=31.97 | risk=DANGER | action=Halt heavy work, mandatory rest, evacuate
+[2026-07-29 11:50:39] [WARNING ] [__main__] [DANGER ALERT] zone=Loading-Dock | wbgt=31.97 | Halt heavy work, mandatory rest, evacuate
+[2026-07-29 11:50:39] [INFO    ] [__main__] [DB] zone=Loading-Dock | db_id=366 | saved OK
+[2026-07-29 11:50:49] [INFO    ] [report] [REPORT] Scheduler triggered — generating report for last 10.0s window
+[2026-07-29 11:50:49] [INFO    ] [report] [REPORT] Fetched 1 readings for window 2026-07-29T06:20:37.493217+00:00 → 2026-07-29T06:20:49.493217+00:00
+[2026-07-29 11:50:49] [INFO    ] [report] [REPORT] CSV report appended: ./reports\wbgt_report.csv (1 rows)
+[2026-07-29 11:50:49] [INFO    ] [report] [REPORT] Scheduler wrote: ./reports\wbgt_report.csv
+[2026-07-29 11:50:49] [DEBUG   ] [report] [REPORT] Next report scheduled in 10.0s
+[2026-07-29 11:50:49] [INFO    ] [__main__] Simulation feeding record 5/138 (Location Type: assembly)
+[2026-07-29 11:50:49] [INFO    ] [__main__] [READING] zone=Rolling-Mill | timestamp=2026-07-22T10:00:00
+[2026-07-29 11:50:49] [DEBUG   ] [__main__] [READING] raw={"timestamp": "2026-07-22T10:00:00", "factory": "Shree Metal Works", "zone": "Rolling-Mill", "temperature_unit": "celsius", "temperature": 32.7, "humidity": 0, "globe_temperature": 41.0, "wet_bulb_tem
+[2026-07-29 11:50:49] [DEBUG   ] [__main__] [VALIDATE] zone=Rolling-Mill | condition=ALL_DATA | missing=[] | flags=[]
+[2026-07-29 11:50:49] [DEBUG   ] [urllib3.connectionpool] Starting new HTTPS connection (1): api.openweathermap.org:443
+[2026-07-29 11:50:50] [DEBUG   ] [urllib3.connectionpool] https://api.openweathermap.org:443 "GET /data/2.5/weather?lat=12.9716&lon=77.5946&appid=88f2329e130bf480c72cfc84306978a1&units=metric HTTP/1.1" 200 523
+[2026-07-29 11:50:50] [INFO    ] [__main__] [CALC] zone=Rolling-Mill | ta=32.7 | rh=44.99 | tg=41.0 | tnwb=23.6558 | wbgt=28.8591
+[2026-07-29 11:50:50] [DEBUG   ] [__main__] [CALC] data_quality={'ta': 'sensor', 'rh': 'estimated', 'tg': 'sensor', 'tnwb': 'calculated', 'wbgt': 'calculated'}
+[2026-07-29 11:50:50] [INFO    ] [__main__] [CLASSIFY] zone=Rolling-Mill | wbgt=28.8591 | risk=CAUTION | action=Increase water breaks
+[2026-07-29 11:50:50] [INFO    ] [__main__] [DB] zone=Rolling-Mill | db_id=367 | saved OK
+[2026-07-29 11:50:54] [INFO    ] [__main__] WBGT Monitor shutting down (KeyboardInterrupt)
+[2026-07-29 11:56:14] [INFO    ] [root] ============================================================
+[2026-07-29 11:56:14] [INFO    ] [root] WBGT Monitor logging started
+[2026-07-29 11:56:14] [INFO    ] [root] Log file : C:\Users\Varsh\Desktop\updated_agis\wbgt_monitor\logs\wbgt_monitor_20260729.log
+[2026-07-29 11:56:14] [INFO    ] [root] ============================================================
+[2026-07-29 11:56:14] [INFO    ] [__main__] WBGT Monitor starting up
+[2026-07-29 11:56:14] [INFO    ] [__main__] Database initialised
+[2026-07-29 11:56:14] [DEBUG   ] [report] [REPORT] Next report scheduled in 10.0s
+[2026-07-29 11:56:14] [INFO    ] [report] [report] Scheduler started — report every 10.0s into './reports/'
+[2026-07-29 11:56:14] [INFO    ] [__main__] Report scheduler started
+[2026-07-29 11:56:14] [INFO    ] [__main__] Simulation mode: Loading records from C:\Users\Varsh\Desktop\updated_agis\input.json
+[2026-07-29 11:56:14] [INFO    ] [__main__] Loaded 138 records. Starting infinite 10-second interval feed loop.
+[2026-07-29 11:56:14] [INFO    ] [__main__] Simulation feeding record 1/138 (Location Type: assembly)
+[2026-07-29 11:56:14] [INFO    ] [__main__] [READING] zone=Furnace-1 | timestamp=2026-07-22T06:00:00
+[2026-07-29 11:56:14] [DEBUG   ] [__main__] [READING] raw={"timestamp": "2026-07-22T06:00:00", "factory": "Shree Metal Works", "zone": "Furnace-1", "temperature_unit": "celsius", "temperature": 37.0, "humidity": 47.5, "globe_temperature": 52.7, "wet_bulb_tem
+[2026-07-29 11:56:14] [DEBUG   ] [__main__] [VALIDATE] zone=Furnace-1 | condition=ALL_DATA | missing=[] | flags=[]
+[2026-07-29 11:56:14] [INFO    ] [__main__] [CALC] zone=Furnace-1 | ta=37.0 | rh=47.5 | tg=52.7 | tnwb=28.0 | wbgt=35.41
+[2026-07-29 11:56:14] [DEBUG   ] [__main__] [CALC] data_quality={'ta': 'sensor', 'rh': 'sensor', 'tg': 'sensor', 'tnwb': 'sensor', 'wbgt': 'calculated'}
+[2026-07-29 11:56:14] [INFO    ] [__main__] [CLASSIFY] zone=Furnace-1 | wbgt=35.41 | risk=DANGER | action=Halt heavy work, mandatory rest, evacuate
+[2026-07-29 11:56:14] [WARNING ] [__main__] [DANGER ALERT] zone=Furnace-1 | wbgt=35.41 | Halt heavy work, mandatory rest, evacuate
+[2026-07-29 11:56:14] [INFO    ] [__main__] [DB] zone=Furnace-1 | db_id=368 | saved OK
+[2026-07-29 11:56:24] [INFO    ] [__main__] Simulation feeding record 2/138 (Location Type: assembly)
+[2026-07-29 11:56:24] [INFO    ] [report] [REPORT] Scheduler triggered — generating report for last 10.0s window
+[2026-07-29 11:56:24] [INFO    ] [__main__] [READING] zone=Fabrication-Shop | timestamp=2026-07-22T07:00:00
+[2026-07-29 11:56:24] [DEBUG   ] [__main__] [READING] raw={"timestamp": "2026-07-22T07:00:00", "factory": "Tata Steel", "zone": "Fabrication-Shop", "temperature_unit": "celsius", "temperature": 24.4, "humidity": 54.1, "globe_temperature": 25.7, "wet_bulb_tem
+[2026-07-29 11:56:24] [DEBUG   ] [__main__] [VALIDATE] zone=Fabrication-Shop | condition=ALL_DATA | missing=[] | flags=[]
+[2026-07-29 11:56:24] [INFO    ] [__main__] [CALC] zone=Fabrication-Shop | ta=24.4 | rh=54.1 | tg=25.7 | tnwb=17.7 | wbgt=20.1
+[2026-07-29 11:56:24] [DEBUG   ] [__main__] [CALC] data_quality={'ta': 'sensor', 'rh': 'sensor', 'tg': 'sensor', 'tnwb': 'sensor', 'wbgt': 'calculated'}
+[2026-07-29 11:56:24] [INFO    ] [__main__] [CLASSIFY] zone=Fabrication-Shop | wbgt=20.1 | risk=SAFE | action=Normal work, no restrictions
+[2026-07-29 11:56:24] [INFO    ] [report] [REPORT] Fetched 1 readings for window 2026-07-29T06:26:12.704397+00:00 → 2026-07-29T06:26:24.704397+00:00
+[2026-07-29 11:56:24] [INFO    ] [report] [REPORT] CSV report appended: ./reports\wbgt_report.csv (1 rows)
+[2026-07-29 11:56:24] [INFO    ] [report] [REPORT] Scheduler wrote: ./reports\wbgt_report.csv
+[2026-07-29 11:56:24] [DEBUG   ] [report] [REPORT] Next report scheduled in 10.0s
+[2026-07-29 11:56:24] [INFO    ] [__main__] [DB] zone=Fabrication-Shop | db_id=369 | saved OK
+[2026-07-29 11:56:34] [INFO    ] [report] [REPORT] Scheduler triggered — generating report for last 10.0s window
+[2026-07-29 11:56:34] [INFO    ] [report] [REPORT] Fetched 1 readings for window 2026-07-29T06:26:22.760705+00:00 → 2026-07-29T06:26:34.760705+00:00
+[2026-07-29 11:56:34] [INFO    ] [report] [REPORT] CSV report appended: ./reports\wbgt_report.csv (1 rows)
+[2026-07-29 11:56:34] [INFO    ] [report] [REPORT] Scheduler wrote: ./reports\wbgt_report.csv
+[2026-07-29 11:56:34] [INFO    ] [__main__] Simulation feeding record 3/138 (Location Type: assembly)
+[2026-07-29 11:56:34] [DEBUG   ] [report] [REPORT] Next report scheduled in 10.0s
+[2026-07-29 11:56:34] [INFO    ] [__main__] [READING] zone=EAF-Bay | timestamp=2026-07-22T08:00:00
+[2026-07-29 11:56:34] [DEBUG   ] [__main__] [READING] raw={"timestamp": "2026-07-22T08:00:00", "factory": "JSW Steel", "zone": "EAF-Bay", "temperature_unit": "celsius", "temperature": 42.5, "humidity": 47.0, "globe_temperature": 63.9, "wet_bulb_temperature":
+[2026-07-29 11:56:34] [DEBUG   ] [__main__] [VALIDATE] zone=EAF-Bay | condition=ALL_DATA | missing=[] | flags=[]
+[2026-07-29 11:56:34] [INFO    ] [__main__] [CALC] zone=EAF-Bay | ta=42.5 | rh=47.0 | tg=63.9 | tnwb=32.6 | wbgt=41.99
+[2026-07-29 11:56:34] [DEBUG   ] [__main__] [CALC] data_quality={'ta': 'sensor', 'rh': 'sensor', 'tg': 'sensor', 'tnwb': 'sensor', 'wbgt': 'calculated'}
+[2026-07-29 11:56:34] [INFO    ] [__main__] [CLASSIFY] zone=EAF-Bay | wbgt=41.99 | risk=DANGER | action=Halt heavy work, mandatory rest, evacuate
+[2026-07-29 11:56:34] [WARNING ] [__main__] [DANGER ALERT] zone=EAF-Bay | wbgt=41.99 | Halt heavy work, mandatory rest, evacuate
+[2026-07-29 11:56:34] [INFO    ] [__main__] [DB] zone=EAF-Bay | db_id=370 | saved OK
+[2026-07-29 11:56:44] [INFO    ] [report] [REPORT] Scheduler triggered — generating report for last 10.0s window
+[2026-07-29 11:56:44] [INFO    ] [__main__] Simulation feeding record 4/138 (Location Type: assembly)
+[2026-07-29 11:56:44] [INFO    ] [__main__] [READING] zone=Loading-Dock | timestamp=2026-07-22T09:00:00
+[2026-07-29 11:56:44] [DEBUG   ] [__main__] [READING] raw={"timestamp": "2026-07-22T09:00:00", "factory": "Tata Steel", "zone": "Loading-Dock", "temperature_unit": "celsius", "temperature": 35.0, "humidity": 68.5, "globe_temperature": 37.5, "wet_bulb_tempera
+[2026-07-29 11:56:44] [DEBUG   ] [__main__] [VALIDATE] zone=Loading-Dock | condition=ALL_DATA | missing=[] | flags=[]
+[2026-07-29 11:56:44] [INFO    ] [__main__] [CALC] zone=Loading-Dock | ta=35.0 | rh=68.5 | tg=37.5 | tnwb=29.6 | wbgt=31.97
+[2026-07-29 11:56:44] [DEBUG   ] [__main__] [CALC] data_quality={'ta': 'sensor', 'rh': 'sensor', 'tg': 'sensor', 'tnwb': 'sensor', 'wbgt': 'calculated'}
+[2026-07-29 11:56:44] [INFO    ] [__main__] [CLASSIFY] zone=Loading-Dock | wbgt=31.97 | risk=DANGER | action=Halt heavy work, mandatory rest, evacuate
+[2026-07-29 11:56:44] [INFO    ] [report] [REPORT] Fetched 1 readings for window 2026-07-29T06:26:32.787034+00:00 → 2026-07-29T06:26:44.787034+00:00
+[2026-07-29 11:56:44] [WARNING ] [__main__] [DANGER ALERT] zone=Loading-Dock | wbgt=31.97 | Halt heavy work, mandatory rest, evacuate
+[2026-07-29 11:56:44] [INFO    ] [report] [REPORT] CSV report appended: ./reports\wbgt_report.csv (1 rows)
+[2026-07-29 11:56:44] [INFO    ] [report] [REPORT] Scheduler wrote: ./reports\wbgt_report.csv
+[2026-07-29 11:56:44] [DEBUG   ] [report] [REPORT] Next report scheduled in 10.0s
+[2026-07-29 11:56:44] [INFO    ] [__main__] [DB] zone=Loading-Dock | db_id=371 | saved OK
+[2026-07-29 11:56:48] [INFO    ] [__main__] WBGT Monitor shutting down (KeyboardInterrupt)
+[2026-07-29 11:58:33] [INFO    ] [root] ============================================================
+[2026-07-29 11:58:33] [INFO    ] [root] WBGT Monitor logging started
+[2026-07-29 11:58:33] [INFO    ] [root] Log file : C:\Users\Varsh\Desktop\updated_agis\wbgt_monitor\logs\wbgt_monitor_20260729.log
+[2026-07-29 11:58:33] [INFO    ] [root] ============================================================
+[2026-07-29 11:58:33] [INFO    ] [__main__] WBGT Monitor starting up
+[2026-07-29 11:58:33] [INFO    ] [__main__] Database initialised
+[2026-07-29 11:58:33] [DEBUG   ] [report] [REPORT] Next report scheduled in 10.0s
+[2026-07-29 11:58:33] [INFO    ] [report] [report] Scheduler started — report every 10.0s into './reports/'
+[2026-07-29 11:58:33] [INFO    ] [__main__] Report scheduler started
+[2026-07-29 11:58:33] [INFO    ] [__main__] Simulation mode: Loading records from C:\Users\Varsh\Desktop\updated_agis\input.json
+[2026-07-29 11:58:33] [INFO    ] [__main__] Loaded 138 records. Starting infinite 10-second interval feed loop.
+[2026-07-29 11:58:33] [INFO    ] [__main__] Simulation feeding record 1/138 (Location Type: assembly)
+[2026-07-29 11:58:33] [INFO    ] [__main__] [READING] zone=Furnace-1 | timestamp=2026-07-22T06:00:00
+[2026-07-29 11:58:33] [DEBUG   ] [__main__] [READING] raw={"timestamp": "2026-07-22T06:00:00", "factory": "Shree Metal Works", "zone": "Furnace-1", "temperature_unit": "celsius", "temperature": 37.0, "humidity": 47.5, "globe_temperature": 52.7, "wet_bulb_tem
+[2026-07-29 11:58:33] [DEBUG   ] [__main__] [VALIDATE] zone=Furnace-1 | condition=ALL_DATA | missing=[] | flags=[]
+[2026-07-29 11:58:33] [INFO    ] [__main__] [CALC] zone=Furnace-1 | ta=37.0 | rh=47.5 | tg=52.7 | tnwb=28.0 | wbgt=35.41
+[2026-07-29 11:58:33] [DEBUG   ] [__main__] [CALC] data_quality={'ta': 'sensor', 'rh': 'sensor', 'tg': 'sensor', 'tnwb': 'sensor', 'wbgt': 'calculated'}
+[2026-07-29 11:58:33] [INFO    ] [__main__] [CLASSIFY] zone=Furnace-1 | wbgt=35.41 | risk=DANGER | action=Halt heavy work, mandatory rest, evacuate
+[2026-07-29 11:58:33] [WARNING ] [__main__] [DANGER ALERT] zone=Furnace-1 | wbgt=35.41 | Halt heavy work, mandatory rest, evacuate
+[2026-07-29 11:58:33] [INFO    ] [__main__] [DB] zone=Furnace-1 | db_id=372 | saved OK
+[2026-07-29 11:58:43] [INFO    ] [report] [REPORT] Scheduler triggered — generating report for last 10.0s window
+[2026-07-29 11:58:43] [INFO    ] [__main__] Simulation feeding record 2/138 (Location Type: assembly)
+[2026-07-29 11:58:43] [INFO    ] [__main__] [READING] zone=Fabrication-Shop | timestamp=2026-07-22T07:00:00
+[2026-07-29 11:58:43] [DEBUG   ] [__main__] [READING] raw={"timestamp": "2026-07-22T07:00:00", "factory": "Tata Steel", "zone": "Fabrication-Shop", "temperature_unit": "celsius", "temperature": 24.4, "humidity": 54.1, "globe_temperature": 25.7, "wet_bulb_tem
+[2026-07-29 11:58:43] [DEBUG   ] [__main__] [VALIDATE] zone=Fabrication-Shop | condition=ALL_DATA | missing=[] | flags=[]
+[2026-07-29 11:58:43] [INFO    ] [__main__] [CALC] zone=Fabrication-Shop | ta=24.4 | rh=54.1 | tg=25.7 | tnwb=17.7 | wbgt=20.1
+[2026-07-29 11:58:43] [DEBUG   ] [__main__] [CALC] data_quality={'ta': 'sensor', 'rh': 'sensor', 'tg': 'sensor', 'tnwb': 'sensor', 'wbgt': 'calculated'}
+[2026-07-29 11:58:43] [INFO    ] [__main__] [CLASSIFY] zone=Fabrication-Shop | wbgt=20.1 | risk=SAFE | action=Normal work, no restrictions
+[2026-07-29 11:58:43] [INFO    ] [report] [REPORT] Fetched 1 readings for window 2026-07-29T06:28:31.189765+00:00 → 2026-07-29T06:28:43.189765+00:00
+[2026-07-29 11:58:43] [INFO    ] [report] [REPORT] CSV report appended: ./reports\wbgt_report.csv (1 rows)
+[2026-07-29 11:58:43] [INFO    ] [report] [REPORT] Scheduler wrote: ./reports\wbgt_report.csv
+[2026-07-29 11:58:43] [DEBUG   ] [report] [REPORT] Next report scheduled in 10.0s
+[2026-07-29 11:58:43] [INFO    ] [__main__] [DB] zone=Fabrication-Shop | db_id=373 | saved OK
+[2026-07-29 11:58:48] [INFO    ] [__main__] WBGT Monitor shutting down (KeyboardInterrupt)
+[2026-07-29 12:01:11] [INFO    ] [root] ============================================================
+[2026-07-29 12:01:11] [INFO    ] [root] WBGT Monitor logging started
+[2026-07-29 12:01:11] [INFO    ] [root] Log file : C:\Users\Varsh\Desktop\updated_agis\wbgt_monitor\logs\wbgt_monitor_20260729.log
+[2026-07-29 12:01:11] [INFO    ] [root] ============================================================
+[2026-07-29 12:01:11] [INFO    ] [__main__] WBGT Monitor starting up
+[2026-07-29 12:01:11] [INFO    ] [__main__] Database initialised
+[2026-07-29 12:01:11] [DEBUG   ] [report] [REPORT] Next report scheduled in 10.0s
+[2026-07-29 12:01:11] [INFO    ] [report] [report] Scheduler started — report every 10.0s into './reports/'
+[2026-07-29 12:01:11] [INFO    ] [__main__] Report scheduler started
+[2026-07-29 12:01:11] [INFO    ] [__main__] Simulation mode: Loading records from C:\Users\Varsh\Desktop\updated_agis\input.json
+[2026-07-29 12:01:11] [INFO    ] [__main__] Loaded 138 records. Starting infinite 10-second interval feed loop.
+[2026-07-29 12:01:11] [INFO    ] [__main__] Simulation feeding record 1/138 (Location Type: assembly)
+[2026-07-29 12:01:11] [INFO    ] [__main__] [READING] zone=Furnace-1 | timestamp=2026-07-22T06:00:00
+[2026-07-29 12:01:11] [DEBUG   ] [__main__] [READING] raw={"timestamp": "2026-07-22T06:00:00", "factory": "Shree Metal Works", "zone": "Furnace-1", "temperature_unit": "celsius", "temperature": 37.0, "humidity": 47.5, "globe_temperature": 52.7, "wet_bulb_tem
+[2026-07-29 12:01:11] [DEBUG   ] [__main__] [VALIDATE] zone=Furnace-1 | condition=ALL_DATA | missing=[] | flags=[]
+[2026-07-29 12:01:11] [INFO    ] [__main__] [CALC] zone=Furnace-1 | ta=37.0 | rh=47.5 | tg=52.7 | tnwb=28.0 | wbgt=35.41
+[2026-07-29 12:01:11] [DEBUG   ] [__main__] [CALC] data_quality={'ta': 'sensor', 'rh': 'sensor', 'tg': 'sensor', 'tnwb': 'sensor', 'wbgt': 'calculated'}
+[2026-07-29 12:01:11] [INFO    ] [__main__] [CLASSIFY] zone=Furnace-1 | wbgt=35.41 | risk=DANGER | action=Halt heavy work, mandatory rest, evacuate
+[2026-07-29 12:01:11] [WARNING ] [__main__] [DANGER ALERT] zone=Furnace-1 | wbgt=35.41 | Halt heavy work, mandatory rest, evacuate
+[2026-07-29 12:01:11] [INFO    ] [__main__] [DB] zone=Furnace-1 | db_id=374 | saved OK
+[2026-07-29 12:01:21] [INFO    ] [report] [REPORT] Scheduler triggered — generating report for last 10.0s window
+[2026-07-29 12:01:21] [INFO    ] [__main__] Simulation feeding record 2/138 (Location Type: assembly)
+[2026-07-29 12:01:21] [INFO    ] [__main__] [READING] zone=Fabrication-Shop | timestamp=2026-07-22T07:00:00
+[2026-07-29 12:01:21] [DEBUG   ] [__main__] [READING] raw={"timestamp": "2026-07-22T07:00:00", "factory": "Tata Steel", "zone": "Fabrication-Shop", "temperature_unit": "celsius", "temperature": 24.4, "humidity": 54.1, "globe_temperature": 25.7, "wet_bulb_tem
+[2026-07-29 12:01:21] [DEBUG   ] [__main__] [VALIDATE] zone=Fabrication-Shop | condition=ALL_DATA | missing=[] | flags=[]
+[2026-07-29 12:01:21] [INFO    ] [__main__] [CALC] zone=Fabrication-Shop | ta=24.4 | rh=54.1 | tg=25.7 | tnwb=17.7 | wbgt=20.1
+[2026-07-29 12:01:21] [DEBUG   ] [__main__] [CALC] data_quality={'ta': 'sensor', 'rh': 'sensor', 'tg': 'sensor', 'tnwb': 'sensor', 'wbgt': 'calculated'}
+[2026-07-29 12:01:21] [INFO    ] [report] [REPORT] Fetched 1 readings for window 2026-07-29T06:31:09.626745+00:00 → 2026-07-29T06:31:21.626745+00:00
+[2026-07-29 12:01:21] [INFO    ] [__main__] [CLASSIFY] zone=Fabrication-Shop | wbgt=20.1 | risk=SAFE | action=Normal work, no restrictions
+[2026-07-29 12:01:21] [INFO    ] [report] [REPORT] CSV report appended: ./reports\wbgt_report.csv (1 rows)
+[2026-07-29 12:01:21] [INFO    ] [report] [REPORT] Scheduler wrote: ./reports\wbgt_report.csv
+[2026-07-29 12:01:21] [DEBUG   ] [report] [REPORT] Next report scheduled in 10.0s
+[2026-07-29 12:01:21] [INFO    ] [__main__] [DB] zone=Fabrication-Shop | db_id=375 | saved OK
+[2026-07-29 12:01:27] [INFO    ] [__main__] WBGT Monitor shutting down (KeyboardInterrupt)
+[2026-07-29 12:06:37] [INFO    ] [root] ============================================================
+[2026-07-29 12:06:37] [INFO    ] [root] WBGT Monitor logging started
+[2026-07-29 12:06:37] [INFO    ] [root] Log file : C:\Users\Varsh\Desktop\updated_agis\wbgt_monitor\logs\wbgt_monitor_20260729.log
+[2026-07-29 12:06:37] [INFO    ] [root] ============================================================
+[2026-07-29 12:06:37] [INFO    ] [__main__] WBGT Monitor starting up
+[2026-07-29 12:06:37] [INFO    ] [__main__] Database initialised
+[2026-07-29 12:06:37] [DEBUG   ] [report] [REPORT] Next report scheduled in 10.0s
+[2026-07-29 12:06:37] [INFO    ] [report] [report] Scheduler started — report every 10.0s into './reports/'
+[2026-07-29 12:06:37] [INFO    ] [__main__] Report scheduler started
+[2026-07-29 12:06:37] [INFO    ] [__main__] Simulation mode: Loading records from C:\Users\Varsh\Desktop\updated_agis\input.json
+[2026-07-29 12:06:37] [INFO    ] [__main__] Loaded 138 records. Starting infinite 10-second interval feed loop.
+[2026-07-29 12:06:37] [INFO    ] [__main__] Simulation feeding record 1/138 (Location Type: assembly)
+[2026-07-29 12:06:37] [INFO    ] [__main__] [READING] zone=Furnace-1 | timestamp=2026-07-22T06:00:00
+[2026-07-29 12:06:37] [DEBUG   ] [__main__] [READING] raw={"timestamp": "2026-07-22T06:00:00", "factory": "Shree Metal Works", "zone": "Furnace-1", "temperature_unit": "celsius", "temperature": 37.0, "humidity": 47.5, "globe_temperature": 52.7, "wet_bulb_tem
+[2026-07-29 12:06:37] [DEBUG   ] [__main__] [VALIDATE] zone=Furnace-1 | condition=ALL_DATA | missing=[] | flags=[]
+[2026-07-29 12:06:37] [INFO    ] [__main__] [CALC] zone=Furnace-1 | ta=37.0 | rh=47.5 | tg=52.7 | tnwb=28.0 | wbgt=35.41
+[2026-07-29 12:06:37] [DEBUG   ] [__main__] [CALC] data_quality={'ta': 'sensor', 'rh': 'sensor', 'tg': 'sensor', 'tnwb': 'sensor', 'wbgt': 'calculated'}
+[2026-07-29 12:06:37] [INFO    ] [__main__] [CLASSIFY] zone=Furnace-1 | wbgt=35.41 | risk=DANGER | action=Halt heavy work, mandatory rest, evacuate
+[2026-07-29 12:06:37] [WARNING ] [__main__] [DANGER ALERT] zone=Furnace-1 | wbgt=35.41 | Halt heavy work, mandatory rest, evacuate
+[2026-07-29 12:06:37] [INFO    ] [__main__] [DB] zone=Furnace-1 | db_id=376 | saved OK
+[2026-07-29 12:06:47] [INFO    ] [report] [REPORT] Scheduler triggered — generating report for last 10.0s window
+[2026-07-29 12:06:47] [INFO    ] [report] [REPORT] Fetched 1 readings for window 2026-07-29T06:36:35.585367+00:00 → 2026-07-29T06:36:47.585367+00:00
+[2026-07-29 12:06:47] [INFO    ] [report] [REPORT] CSV report appended: ./reports\wbgt_report.csv (1 rows)
+[2026-07-29 12:06:47] [INFO    ] [report] [REPORT] Scheduler wrote: ./reports\wbgt_report.csv
+[2026-07-29 12:06:47] [DEBUG   ] [report] [REPORT] Next report scheduled in 10.0s
+[2026-07-29 12:06:47] [INFO    ] [__main__] Simulation feeding record 2/138 (Location Type: assembly)
+[2026-07-29 12:06:47] [INFO    ] [__main__] [READING] zone=Fabrication-Shop | timestamp=2026-07-22T07:00:00
+[2026-07-29 12:06:47] [DEBUG   ] [__main__] [READING] raw={"timestamp": "2026-07-22T07:00:00", "factory": "Tata Steel", "zone": "Fabrication-Shop", "temperature_unit": "celsius", "temperature": 24.4, "humidity": 54.1, "globe_temperature": 25.7, "wet_bulb_tem
+[2026-07-29 12:06:47] [DEBUG   ] [__main__] [VALIDATE] zone=Fabrication-Shop | condition=ALL_DATA | missing=[] | flags=[]
+[2026-07-29 12:06:47] [INFO    ] [__main__] [CALC] zone=Fabrication-Shop | ta=24.4 | rh=54.1 | tg=25.7 | tnwb=17.7 | wbgt=20.1
+[2026-07-29 12:06:47] [DEBUG   ] [__main__] [CALC] data_quality={'ta': 'sensor', 'rh': 'sensor', 'tg': 'sensor', 'tnwb': 'sensor', 'wbgt': 'calculated'}
+[2026-07-29 12:06:47] [INFO    ] [__main__] [CLASSIFY] zone=Fabrication-Shop | wbgt=20.1 | risk=SAFE | action=Normal work, no restrictions
+[2026-07-29 12:06:47] [INFO    ] [__main__] [DB] zone=Fabrication-Shop | db_id=377 | saved OK
+[2026-07-29 12:06:57] [INFO    ] [report] [REPORT] Scheduler triggered — generating report for last 10.0s window
+[2026-07-29 12:06:57] [INFO    ] [report] [REPORT] Fetched 1 readings for window 2026-07-29T06:36:45.627989+00:00 → 2026-07-29T06:36:57.627989+00:00
+[2026-07-29 12:06:57] [INFO    ] [report] [REPORT] CSV report appended: ./reports\wbgt_report.csv (1 rows)
+[2026-07-29 12:06:57] [INFO    ] [report] [REPORT] Scheduler wrote: ./reports\wbgt_report.csv
+[2026-07-29 12:06:57] [DEBUG   ] [report] [REPORT] Next report scheduled in 10.0s
+[2026-07-29 12:06:57] [INFO    ] [__main__] Simulation feeding record 3/138 (Location Type: assembly)
+[2026-07-29 12:06:57] [INFO    ] [__main__] [READING] zone=EAF-Bay | timestamp=2026-07-22T08:00:00
+[2026-07-29 12:06:57] [DEBUG   ] [__main__] [READING] raw={"timestamp": "2026-07-22T08:00:00", "factory": "JSW Steel", "zone": "EAF-Bay", "temperature_unit": "celsius", "temperature": 42.5, "humidity": 47.0, "globe_temperature": 63.9, "wet_bulb_temperature":
+[2026-07-29 12:06:57] [DEBUG   ] [__main__] [VALIDATE] zone=EAF-Bay | condition=ALL_DATA | missing=[] | flags=[]
+[2026-07-29 12:06:57] [INFO    ] [__main__] [CALC] zone=EAF-Bay | ta=42.5 | rh=47.0 | tg=63.9 | tnwb=32.6 | wbgt=41.99
+[2026-07-29 12:06:57] [DEBUG   ] [__main__] [CALC] data_quality={'ta': 'sensor', 'rh': 'sensor', 'tg': 'sensor', 'tnwb': 'sensor', 'wbgt': 'calculated'}
+[2026-07-29 12:06:57] [INFO    ] [__main__] [CLASSIFY] zone=EAF-Bay | wbgt=41.99 | risk=DANGER | action=Halt heavy work, mandatory rest, evacuate
+[2026-07-29 12:06:57] [WARNING ] [__main__] [DANGER ALERT] zone=EAF-Bay | wbgt=41.99 | Halt heavy work, mandatory rest, evacuate
+[2026-07-29 12:06:57] [INFO    ] [__main__] [DB] zone=EAF-Bay | db_id=378 | saved OK
+[2026-07-29 12:07:07] [INFO    ] [report] [REPORT] Scheduler triggered — generating report for last 10.0s window
+[2026-07-29 12:07:07] [INFO    ] [report] [REPORT] Fetched 1 readings for window 2026-07-29T06:36:55.640815+00:00 → 2026-07-29T06:37:07.640815+00:00
+[2026-07-29 12:07:07] [INFO    ] [report] [REPORT] CSV report appended: ./reports\wbgt_report.csv (1 rows)
+[2026-07-29 12:07:07] [INFO    ] [report] [REPORT] Scheduler wrote: ./reports\wbgt_report.csv
+[2026-07-29 12:07:07] [DEBUG   ] [report] [REPORT] Next report scheduled in 10.0s
+[2026-07-29 12:07:07] [INFO    ] [__main__] Simulation feeding record 4/138 (Location Type: assembly)
+[2026-07-29 12:07:07] [INFO    ] [__main__] [READING] zone=Loading-Dock | timestamp=2026-07-22T09:00:00
+[2026-07-29 12:07:07] [DEBUG   ] [__main__] [READING] raw={"timestamp": "2026-07-22T09:00:00", "factory": "Tata Steel", "zone": "Loading-Dock", "temperature_unit": "celsius", "temperature": 35.0, "humidity": 68.5, "globe_temperature": 37.5, "wet_bulb_tempera
+[2026-07-29 12:07:07] [DEBUG   ] [__main__] [VALIDATE] zone=Loading-Dock | condition=ALL_DATA | missing=[] | flags=[]
+[2026-07-29 12:07:07] [INFO    ] [__main__] [CALC] zone=Loading-Dock | ta=35.0 | rh=68.5 | tg=37.5 | tnwb=29.6 | wbgt=31.97
+[2026-07-29 12:07:07] [DEBUG   ] [__main__] [CALC] data_quality={'ta': 'sensor', 'rh': 'sensor', 'tg': 'sensor', 'tnwb': 'sensor', 'wbgt': 'calculated'}
+[2026-07-29 12:07:07] [INFO    ] [__main__] [CLASSIFY] zone=Loading-Dock | wbgt=31.97 | risk=DANGER | action=Halt heavy work, mandatory rest, evacuate
+[2026-07-29 12:07:07] [WARNING ] [__main__] [DANGER ALERT] zone=Loading-Dock | wbgt=31.97 | Halt heavy work, mandatory rest, evacuate
+[2026-07-29 12:07:07] [INFO    ] [__main__] [DB] zone=Loading-Dock | db_id=379 | saved OK
+[2026-07-29 12:07:15] [INFO    ] [__main__] WBGT Monitor shutting down (KeyboardInterrupt)

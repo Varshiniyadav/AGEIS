@@ -159,6 +159,8 @@ if __name__ == "__main__":
         
         # Load input.json from the parent directory
         input_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "input.json")
+        settings_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "settings.json")
+        
         if os.path.exists(input_path):
             log.info(f"Simulation mode: Loading records from {input_path}")
             try:
@@ -168,8 +170,28 @@ if __name__ == "__main__":
                 log.info(f"Loaded {len(records)} records. Starting infinite 10-second interval feed loop.")
                 while True:
                     for i, record in enumerate(records):
-                        log.info(f"Simulation feeding record {i+1}/{len(records)}")
-                        result = process_reading(json.dumps(record))
+                        # Make a copy of the record to apply active settings dynamically
+                        sim_record = record.copy()
+                        
+                        # Load current settings if available
+                        if os.path.exists(settings_path):
+                            try:
+                                with open(settings_path, "r", encoding="utf-8") as sf:
+                                    settings = json.load(sf)
+                                
+                                # Apply settings overrides
+                                sim_record["location_type"] = settings.get("location_type", "default")
+                                if settings.get("rh_status") == "missing":
+                                    sim_record.pop("humidity", None)
+                                if settings.get("tg_status") == "missing":
+                                    sim_record.pop("globe_temperature", None)
+                                if settings.get("twnb_status") == "missing":
+                                    sim_record.pop("wet_bulb_temperature", None)
+                            except Exception as se:
+                                log.debug(f"Could not load settings.json: {se}")
+                        
+                        log.info(f"Simulation feeding record {i+1}/{len(records)} (Location Type: {sim_record.get('location_type', 'default')})")
+                        result = process_reading(json.dumps(sim_record))
                         print(json.dumps(result))
                         sys.stdout.flush()
                         time.sleep(10)
