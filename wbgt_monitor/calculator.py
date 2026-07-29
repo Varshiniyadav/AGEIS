@@ -122,16 +122,6 @@ def _estimate_tg(ta: float, location_type: str) -> float:
     return ta + offset
 
 
-def _rh_from_dew_point(ta: float, td: float) -> float:
-    """
-    Estimate RH from dew point using the simplified formula:
-        RH% = 100 - 5*(Ta - Td)
-    Clamped to [0, 100].
-    """
-    rh = 100.0 - 5.0 * (ta - td)
-    return max(0.0, min(100.0, rh))
-
-
 def _indoor_rh_from_weather(ta_in: float, weather_client: WeatherClient) -> float:
     """
     Estimate indoor RH using outdoor weather data and the vapour-pressure
@@ -177,7 +167,7 @@ def run_calculation(reading: dict, validation: dict) -> dict:
     weather = WeatherClient()
 
     # ---- Resolve Ta --------------------------------------------------------
-    if reading.get("air_temp_c") is not None:
+    if reading.get("air_temp_c") is not None and reading.get("air_temp_c") != "":
         ta = float(reading["air_temp_c"])
         quality["ta"] = "sensor"
     else:
@@ -187,35 +177,30 @@ def run_calculation(reading: dict, validation: dict) -> dict:
         quality["ta"] = "api"
 
     # ---- Resolve RH --------------------------------------------------------
-    if reading.get("relative_humidity_pct") is not None:
+    if reading.get("relative_humidity_pct") is not None and reading.get("relative_humidity_pct") != "" and reading.get("relative_humidity_pct") != 0:
         rh = float(reading["relative_humidity_pct"])
         quality["rh"] = "sensor"
-    elif reading.get("dew_point_c") is not None and is_outdoor:
-        # Outdoor: estimate RH from dew point.
-        td = float(reading["dew_point_c"])
-        rh = _rh_from_dew_point(ta, td)
-        quality["rh"] = "estimated"
-    elif is_outdoor:
-        # Outdoor, no dew point either: fetch from weather API.
-        wx = weather.get_current()
-        rh = wx["humidity_pct"]
-        quality["rh"] = "api"
     else:
-        # Indoor, RH missing: estimate via vapour-pressure formula.
+        # RH missing: estimate via vapour-pressure formula.
         rh = _indoor_rh_from_weather(ta, weather)
         quality["rh"] = "estimated"
 
     # ---- Resolve Tg --------------------------------------------------------
-    if reading.get("globe_temp_c") is not None:
+    if reading.get("globe_temp_c") is not None and reading.get("globe_temp_c") != "" and reading.get("globe_temp_c") != 0:
         tg = float(reading["globe_temp_c"])
         quality["tg"] = "sensor"
     else:
         tg = _estimate_tg(ta, location_type)
         quality["tg"] = "estimated"
 
-    # ---- Tnwb (always calculated) ------------------------------------------
-    tnwb = _stull_tnwb(ta, rh)
-    quality["tnwb"] = "calculated"
+    # ---- Tnwb (use wet_bulb_temperature if present and valid) ----------------
+    tnwb_val = reading.get("wet_bulb_temperature")
+    if tnwb_val is not None and tnwb_val != "" and tnwb_val != 0:
+        tnwb = float(tnwb_val)
+        quality["tnwb"] = "sensor"
+    else:
+        tnwb = _stull_tnwb(ta, rh)
+        quality["tnwb"] = "calculated"
 
     # ---- WBGT --------------------------------------------------------------
     if is_outdoor:

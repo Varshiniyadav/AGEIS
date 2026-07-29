@@ -39,12 +39,23 @@ def _build_engine():
             connect_args={"check_same_thread": False},
         )
 
-    # PostgreSQL
+    # MySQL
+    from urllib.parse import quote_plus
     host   = os.getenv("DB_HOST",     "localhost")
+    passwd = quote_plus(os.getenv("DB_PASSWORD", ""))
+    
+    if engine_type == "mysql":
+        port   = os.getenv("DB_PORT",     "3306")
+        name   = os.getenv("DB_NAME",     "AGEIS")
+        user   = os.getenv("DB_USER",     "root")
+        return create_engine(
+            f"mysql+pymysql://{user}:{passwd}@{host}:{port}/{name}"
+        )
+
+    # PostgreSQL
     port   = os.getenv("DB_PORT",     "5432")
     name   = os.getenv("DB_NAME",     "wbgt")
     user   = os.getenv("DB_USER",     "postgres")
-    passwd = os.getenv("DB_PASSWORD", "")
     return create_engine(
         f"postgresql+psycopg2://{user}:{passwd}@{host}:{port}/{name}"
     )
@@ -64,8 +75,8 @@ class WbgtReading(Base):
     id               = Column(Integer, primary_key=True, autoincrement=True)
     zone_id          = Column(String(64),  nullable=False, index=True)
     timestamp        = Column(String(64),  nullable=False)
-    location_type    = Column(String(64),  nullable=True)
-    is_outdoor       = Column(Boolean,     nullable=True)
+    location_type    = Column(String(64),  nullable=False, default="indoor")
+    is_outdoor       = Column(Boolean,     nullable=False, default=False)
     ta               = Column(Float,       nullable=True)
     rh               = Column(Float,       nullable=True)
     tg               = Column(Float,       nullable=True)
@@ -115,8 +126,8 @@ def insert_reading(data: dict) -> int:
         row = WbgtReading(
             zone_id           = data.get("zone_id"),
             timestamp         = str(data.get("timestamp", "")),
-            location_type     = data.get("location_type"),
-            is_outdoor        = data.get("is_outdoor"),
+            location_type     = data.get("location_type", "indoor") or "indoor",
+            is_outdoor        = data.get("is_outdoor", False) if data.get("is_outdoor") is not None else False,
             ta                = data.get("ta"),
             rh                = data.get("rh"),
             tg                = data.get("tg"),

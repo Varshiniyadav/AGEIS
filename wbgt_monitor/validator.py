@@ -48,12 +48,6 @@ def validate(reading: dict) -> dict:
             result["is_fault"] = True
             result["fault_reason"] = "SENSOR_FAULT: air_temp_c is not a valid number."
             return result
-        if not (0 <= ta <= 60):
-            result["is_fault"] = True
-            result["fault_reason"] = (
-                f"SENSOR_FAULT: air_temp_c={ta} is out of valid range 0–60 °C."
-            )
-            return result
 
     if rh is not None:
         try:

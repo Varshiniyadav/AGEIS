@@ -1,0 +1,30 @@
+[2026-07-29 04:16:59] [INFO    ] [root] ============================================================
+[2026-07-29 04:16:59] [INFO    ] [root] WBGT Monitor logging started
+[2026-07-29 04:16:59] [INFO    ] [root] Log file : C:\Users\Varsh\Desktop\updated_agis\wbgt_monitor\logs\wbgt_monitor_20260729.log
+[2026-07-29 04:16:59] [INFO    ] [root] ============================================================
+[2026-07-29 04:16:59] [INFO    ] [__main__] WBGT Monitor starting up
+[2026-07-29 04:17:01] [INFO    ] [__main__] Database initialised
+[2026-07-29 04:17:01] [INFO    ] [__main__] [READING] zone=Furnace-1 | timestamp=2026-07-29T10:00:00
+[2026-07-29 04:17:01] [DEBUG   ] [__main__] [READING] raw={"zone":"Furnace-1","timestamp":"2026-07-29T10:00:00","temperature":35,"humidity":45,"globe_temperature":40}
+[2026-07-29 04:17:01] [DEBUG   ] [__main__] [VALIDATE] zone=Furnace-1 | condition=ALL_DATA | missing=[] | flags=[]
+[2026-07-29 04:17:01] [INFO    ] [__main__] [CALC] zone=Furnace-1 | ta=35.0 | rh=45.0 | tg=40.0 | tnwb=25.5834 | wbgt=29.9084
+[2026-07-29 04:17:01] [DEBUG   ] [__main__] [CALC] data_quality={'ta': 'sensor', 'rh': 'sensor', 'tg': 'sensor', 'tnwb': 'calculated', 'wbgt': 'calculated'}
+[2026-07-29 04:17:01] [INFO    ] [__main__] [CLASSIFY] zone=Furnace-1 | wbgt=29.9084 | risk=WARNING | action=Enforce work/rest cycles (50 min work, 10 min rest)
+[2026-07-29 04:17:01] [WARNING ] [__main__] [WARNING ALERT] zone=Furnace-1 | wbgt=29.9084 | Enforce work/rest cycles (50 min work, 10 min rest)
+[2026-07-29 04:17:01] [INFO    ] [__main__] [DB] zone=Furnace-1 | db_id=207 | saved OK
+[2026-07-29 04:17:01] [INFO    ] [__main__] Pipeline completed OK | db_id=207
+[2026-07-29 04:37:01] [INFO    ] [root] ============================================================
+[2026-07-29 04:37:01] [INFO    ] [root] WBGT Monitor logging started
+[2026-07-29 04:37:01] [INFO    ] [root] Log file : C:\Users\Varsh\Desktop\updated_agis\wbgt_monitor\logs\wbgt_monitor_20260729.log
+[2026-07-29 04:37:01] [INFO    ] [root] ============================================================
+[2026-07-29 04:37:01] [INFO    ] [__main__] WBGT Monitor starting up
+[2026-07-29 04:37:02] [INFO    ] [__main__] Database initialised
+[2026-07-29 04:37:02] [INFO    ] [__main__] [READING] zone=Furnace-1 | timestamp=2026-07-29T10:00:00
+[2026-07-29 04:37:02] [DEBUG   ] [__main__] [READING] raw={"zone":"Furnace-1","timestamp":"2026-07-29T10:00:00","temperature":30,"humidity":45,"globe_temperature":50}
+[2026-07-29 04:37:02] [DEBUG   ] [__main__] [VALIDATE] zone=Furnace-1 | condition=ALL_DATA | missing=[] | flags=[]
+[2026-07-29 04:37:02] [INFO    ] [__main__] [CALC] zone=Furnace-1 | ta=30.0 | rh=45.0 | tg=50.0 | tnwb=21.3958 | wbgt=29.9771
+[2026-07-29 04:37:02] [DEBUG   ] [__main__] [CALC] data_quality={'ta': 'sensor', 'rh': 'sensor', 'tg': 'sensor', 'tnwb': 'calculated', 'wbgt': 'calculated'}
+[2026-07-29 04:37:02] [INFO    ] [__main__] [CLASSIFY] zone=Furnace-1 | wbgt=29.9771 | risk=WARNING | action=Enforce work/rest cycles (50 min work, 10 min rest)
+[2026-07-29 04:37:02] [WARNING ] [__main__] [WARNING ALERT] zone=Furnace-1 | wbgt=29.9771 | Enforce work/rest cycles (50 min work, 10 min rest)
+[2026-07-29 04:37:02] [INFO    ] [__main__] [DB] zone=Furnace-1 | db_id=311 | saved OK
+[2026-07-29 04:37:02] [INFO    ] [__main__] Pipeline completed OK | db_id=311

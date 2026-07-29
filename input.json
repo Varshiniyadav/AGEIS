@@ -1,0 +1,1382 @@
+[
+    {
+        "timestamp": "2026-07-22T06:00:00",
+        "factory": "Shree Metal Works",
+        "zone": "Furnace-1",
+        "temperature_unit": "celsius",
+        "temperature": 37.0,
+        "humidity": 47.5,
+        "globe_temperature": 52.7,
+        "wet_bulb_temperature": 28.0
+    },
+    {
+        "timestamp": "2026-07-22T07:00:00",
+        "factory": "Tata Steel",
+        "zone": "Fabrication-Shop",
+        "temperature_unit": "celsius",
+        "temperature": 24.4,
+        "humidity": 54.1,
+        "globe_temperature": 25.7,
+        "wet_bulb_temperature": 17.7
+    },
+    {
+        "timestamp": "2026-07-22T08:00:00",
+        "factory": "JSW Steel",
+        "zone": "EAF-Bay",
+        "temperature_unit": "celsius",
+        "temperature": 42.5,
+        "humidity": 47.0,
+        "globe_temperature": 63.9,
+        "wet_bulb_temperature": 32.6
+    },
+    {
+        "timestamp": "2026-07-22T09:00:00",
+        "factory": "Tata Steel",
+        "zone": "Loading-Dock",
+        "temperature_unit": "celsius",
+        "temperature": 35.0,
+        "humidity": 68.5,
+        "globe_temperature": 37.5,
+        "wet_bulb_temperature": 29.6
+    },
+    {
+        "timestamp": "2026-07-22T10:00:00",
+        "factory": "Shree Metal Works",
+        "zone": "Rolling-Mill",
+        "temperature_unit": "celsius",
+        "temperature": 32.7,
+        "humidity": 0,
+        "globe_temperature": 41.0,
+        "wet_bulb_temperature": 0
+    },
+    {
+        "timestamp": "2026-07-22T11:00:00",
+        "factory": "Shree Metal Works",
+        "zone": "Continuous-Casting",
+        "temperature_unit": "celsius",
+        "temperature": 49.4,
+        "humidity": 53.3,
+        "globe_temperature": 67.5,
+        "wet_bulb_temperature": 40.0
+    },
+    {
+        "timestamp": "2026-07-22T12:00:00",
+        "factory": "SAIL",
+        "zone": "Warehouse",
+        "temperature_unit": "celsius",
+        "temperature": 71.3,
+        "humidity": 48.5,
+        "globe_temperature": 0,
+        "wet_bulb_temperature": 0
+    },
+    {
+        "timestamp": "2026-07-22T13:00:00",
+        "factory": "Tata Steel",
+        "zone": "Ladle-Metallurgy",
+        "temperature_unit": "celsius",
+        "temperature": 47.4,
+        "humidity": 50.7,
+        "globe_temperature": 65.9,
+        "wet_bulb_temperature": 0
+    },
+    {
+        "timestamp": "2026-07-22T14:00:00",
+        "factory": "Ganesh Alloys",
+        "zone": "Furnace-2",
+        "temperature_unit": "celsius",
+        "temperature": 59.6,
+        "humidity": 111.3,
+        "globe_temperature": 79.8,
+        "wet_bulb_temperature": 0
+    },
+    {
+        "timestamp": "2026-07-22T15:00:00",
+        "factory": "Vedanta",
+        "zone": "Furnace-1",
+        "temperature_unit": "celsius",
+        "temperature": 56.8,
+        "humidity": 0,
+        "globe_temperature": 0,
+        "wet_bulb_temperature": 45.6
+    },
+    {
+        "timestamp": "2026-07-22T16:00:00",
+        "factory": "JSW Steel",
+        "zone": "Annealing-Line",
+        "temperature_unit": "celsius",
+        "temperature": 34.9,
+        "humidity": 49.5,
+        "globe_temperature": 40.8,
+        "wet_bulb_temperature": 0
+    },
+    {
+        "timestamp": "2026-07-22T17:00:00",
+        "factory": "SAIL",
+        "zone": "Continuous-Casting",
+        "temperature_unit": "celsius",
+        "temperature": 39.8,
+        "humidity": 0,
+        "globe_temperature": 0,
+        "wet_bulb_temperature": 31.1
+    },
+    {
+        "timestamp": "2026-07-22T18:00:00",
+        "factory": "Tata Steel",
+        "zone": "Loading-Dock",
+        "temperature_unit": "celsius",
+        "temperature": 27.1,
+        "humidity": 0,
+        "globe_temperature": 0,
+        "wet_bulb_temperature": 18.1
+    },
+    {
+        "timestamp": "2026-07-22T19:00:00",
+        "factory": "Vedanta",
+        "zone": "Furnace-2",
+        "temperature_unit": "celsius",
+        "temperature": 36.4,
+        "humidity": 0,
+        "globe_temperature": 53.2,
+        "wet_bulb_temperature": 0
+    },
+    {
+        "timestamp": "2026-07-22T20:00:00",
+        "factory": "JSW Steel",
+        "zone": "Furnace-1",
+        "temperature_unit": "celsius",
+        "temperature": 39.0,
+        "humidity": 0,
+        "globe_temperature": 57.5,
+        "wet_bulb_temperature": 29.3
+    },
+    {
+        "timestamp": "2026-07-22T21:00:00",
+        "factory": "Tata Steel",
+        "zone": "Warehouse",
+        "temperature_unit": "celsius",
+        "temperature": 22.9,
+        "humidity": 0,
+        "globe_temperature": 23.9,
+        "wet_bulb_temperature": 0
+    },
+    {
+        "timestamp": "2026-07-22T22:00:00",
+        "factory": "Shree Metal Works",
+        "zone": "EAF-Bay",
+        "temperature_unit": "celsius",
+        "temperature": 41.4,
+        "humidity": 51.4,
+        "globe_temperature": 58.4,
+        "wet_bulb_temperature": 32.1
+    },
+    {
+        "timestamp": "2026-07-22T23:00:00",
+        "factory": "JSW Steel",
+        "zone": "Fabrication-Shop",
+        "temperature_unit": "celsius",
+        "temperature": 20.6,
+        "humidity": 71.1,
+        "globe_temperature": 22.6,
+        "wet_bulb_temperature": 0
+    },
+    {
+        "timestamp": "2026-07-23T00:00:00",
+        "factory": "Shree Metal Works",
+        "zone": "Annealing-Line",
+        "temperature_unit": "celsius",
+        "temperature": 24.4,
+        "humidity": 44.4,
+        "globe_temperature": 27.2,
+        "wet_bulb_temperature": 16.2
+    },
+    {
+        "timestamp": "2026-07-23T01:00:00",
+        "factory": "Ganesh Alloys",
+        "zone": "Ladle-Metallurgy",
+        "temperature_unit": "celsius",
+        "temperature": 30.0,
+        "humidity": 0,
+        "globe_temperature": 43.1,
+        "wet_bulb_temperature": 0
+    },
+    {
+        "timestamp": "2026-07-23T02:00:00",
+        "factory": "Shree Metal Works",
+        "zone": "Rolling-Mill",
+        "temperature_unit": "celsius",
+        "temperature": 27.3,
+        "humidity": 57.4,
+        "globe_temperature": 35.0,
+        "wet_bulb_temperature": 20.7
+    },
+    {
+        "timestamp": "2026-07-23T03:00:00",
+        "factory": "Vedanta",
+        "zone": "Annealing-Line",
+        "temperature_unit": "celsius",
+        "temperature": 26.8,
+        "humidity": 51.0,
+        "globe_temperature": 33.2,
+        "wet_bulb_temperature": 19.6
+    },
+    {
+        "timestamp": "2026-07-23T04:00:00",
+        "factory": "Ganesh Alloys",
+        "zone": "Fabrication-Shop",
+        "temperature_unit": "celsius",
+        "temperature": 22.4,
+        "humidity": 66.9,
+        "globe_temperature": 16.9,
+        "wet_bulb_temperature": 18.6
+    },
+    {
+        "timestamp": "2026-07-23T05:00:00",
+        "factory": "JSPL",
+        "zone": "Loading-Dock",
+        "temperature_unit": "celsius",
+        "temperature": 19.6,
+        "humidity": 47.8,
+        "globe_temperature": 21.5,
+        "wet_bulb_temperature": 13.2
+    },
+    {
+        "timestamp": "2026-07-23T06:00:00",
+        "factory": "SAIL",
+        "zone": "Furnace-1",
+        "temperature_unit": "celsius",
+        "temperature": 47.0,
+        "humidity": 48.9,
+        "globe_temperature": 69.2,
+        "wet_bulb_temperature": 36.3
+    },
+    {
+        "timestamp": "2026-07-23T07:00:00",
+        "factory": "Shree Metal Works",
+        "zone": "Warehouse",
+        "temperature_unit": "celsius",
+        "temperature": 23.0,
+        "humidity": 70.0,
+        "globe_temperature": 25.2,
+        "wet_bulb_temperature": 19.1
+    },
+    {
+        "timestamp": "2026-07-23T08:00:00",
+        "factory": "Tata Steel",
+        "zone": "Furnace-2",
+        "temperature_unit": "celsius",
+        "temperature": 33.1,
+        "humidity": 122.8,
+        "globe_temperature": 49.2,
+        "wet_bulb_temperature": 25.4
+    },
+    {
+        "timestamp": "2026-07-23T09:00:00",
+        "factory": "Ganesh Alloys",
+        "zone": "Continuous-Casting",
+        "temperature_unit": "celsius",
+        "temperature": 33.8,
+        "humidity": 60.0,
+        "globe_temperature": 49.3,
+        "wet_bulb_temperature": 27.8
+    },
+    {
+        "timestamp": "2026-07-23T10:00:00",
+        "factory": "Shree Metal Works",
+        "zone": "Rolling-Mill",
+        "temperature_unit": "celsius",
+        "temperature": 36.4,
+        "humidity": 57.3,
+        "globe_temperature": 34.2,
+        "wet_bulb_temperature": 29.4
+    },
+    {
+        "timestamp": "2026-07-23T11:00:00",
+        "factory": "SAIL",
+        "zone": "Ladle-Metallurgy",
+        "temperature_unit": "celsius",
+        "temperature": 37.1,
+        "humidity": 43.1,
+        "globe_temperature": 49.6,
+        "wet_bulb_temperature": 26.7
+    },
+    {
+        "timestamp": "2026-07-23T12:00:00",
+        "factory": "JSPL",
+        "zone": "EAF-Bay",
+        "temperature_unit": "celsius",
+        "temperature": 41.3,
+        "humidity": 28.4,
+        "globe_temperature": 0,
+        "wet_bulb_temperature": 26.5
+    },
+    {
+        "timestamp": "2026-07-23T13:00:00",
+        "factory": "Vedanta",
+        "zone": "Furnace-2",
+        "temperature_unit": "celsius",
+        "temperature": 38.0,
+        "humidity": 43.1,
+        "globe_temperature": 56.3,
+        "wet_bulb_temperature": 27.9
+    },
+    {
+        "timestamp": "2026-07-23T14:00:00",
+        "factory": "SAIL",
+        "zone": "EAF-Bay",
+        "temperature_unit": "celsius",
+        "temperature": 40.4,
+        "humidity": 35.2,
+        "globe_temperature": 60.3,
+        "wet_bulb_temperature": 27.5
+    },
+    {
+        "timestamp": "2026-07-23T15:00:00",
+        "factory": "SAIL",
+        "zone": "Fabrication-Shop",
+        "temperature_unit": "celsius",
+        "temperature": 31.9,
+        "humidity": 59.2,
+        "globe_temperature": 33.8,
+        "wet_bulb_temperature": 25.7
+    },
+    {
+        "timestamp": "2026-07-23T16:00:00",
+        "factory": "Ganesh Alloys",
+        "zone": "Loading-Dock",
+        "temperature_unit": "celsius",
+        "temperature": 25.5,
+        "humidity": 57.6,
+        "globe_temperature": 27.3,
+        "wet_bulb_temperature": 19.3
+    },
+    {
+        "timestamp": "2026-07-23T17:00:00",
+        "factory": "Ganesh Alloys",
+        "zone": "Rolling-Mill",
+        "temperature_unit": "celsius",
+        "temperature": 35.9,
+        "humidity": 56.0,
+        "globe_temperature": 43.2,
+        "wet_bulb_temperature": 41.1
+    },
+    {
+        "timestamp": "2026-07-23T18:00:00",
+        "factory": "Tata Steel",
+        "zone": "Continuous-Casting",
+        "temperature_unit": "celsius",
+        "temperature": 31.9,
+        "humidity": 52.8,
+        "globe_temperature": 0,
+        "wet_bulb_temperature": 24.1
+    },
+    {
+        "timestamp": "2026-07-23T19:00:00",
+        "factory": "SAIL",
+        "zone": "Warehouse",
+        "temperature_unit": "celsius",
+        "temperature": 39.0,
+        "humidity": 61.4,
+        "globe_temperature": 46.0,
+        "wet_bulb_temperature": 32.3
+    },
+    {
+        "timestamp": "2026-07-23T20:00:00",
+        "factory": "Tata Steel",
+        "zone": "Furnace-1",
+        "temperature_unit": "celsius",
+        "temperature": 40.6,
+        "humidity": 41.8,
+        "globe_temperature": 58.0,
+        "wet_bulb_temperature": 29.8
+    },
+    {
+        "timestamp": "2026-07-23T21:00:00",
+        "factory": "Ganesh Alloys",
+        "zone": "Annealing-Line",
+        "temperature_unit": "celsius",
+        "temperature": 29.2,
+        "humidity": 56.5,
+        "globe_temperature": 34.3,
+        "wet_bulb_temperature": 22.4
+    },
+    {
+        "timestamp": "2026-07-23T22:00:00",
+        "factory": "Tata Steel",
+        "zone": "Ladle-Metallurgy",
+        "temperature_unit": "celsius",
+        "temperature": 31.0,
+        "humidity": 37.7,
+        "globe_temperature": 47.6,
+        "wet_bulb_temperature": 20.4
+    },
+    {
+        "timestamp": "2026-07-23T23:00:00",
+        "factory": "Vedanta",
+        "zone": "Continuous-Casting",
+        "temperature_unit": "celsius",
+        "temperature": 28.7,
+        "humidity": 47.6,
+        "globe_temperature": 0,
+        "wet_bulb_temperature": 21.2
+    },
+    {
+        "timestamp": "2026-07-24T00:00:00",
+        "factory": "JSW Steel",
+        "zone": "Ladle-Metallurgy",
+        "temperature_unit": "celsius",
+        "temperature": 33.4,
+        "humidity": 0,
+        "globe_temperature": 0,
+        "wet_bulb_temperature": 27.5
+    },
+    {
+        "timestamp": "2026-07-24T01:00:00",
+        "factory": "JSPL",
+        "zone": "Fabrication-Shop",
+        "temperature_unit": "celsius",
+        "temperature": 20.9,
+        "humidity": 0,
+        "globe_temperature": 22.2,
+        "wet_bulb_temperature": 15.8
+    },
+    {
+        "timestamp": "2026-07-24T02:00:00",
+        "factory": "SAIL",
+        "zone": "EAF-Bay",
+        "temperature_unit": "celsius",
+        "temperature": 46.6,
+        "humidity": 47.0,
+        "globe_temperature": 0,
+        "wet_bulb_temperature": 0
+    },
+    {
+        "timestamp": "2026-07-24T03:00:00",
+        "factory": "JSPL",
+        "zone": "Furnace-2",
+        "temperature_unit": "celsius",
+        "temperature": 35.3,
+        "humidity": 35.8,
+        "globe_temperature": 49.5,
+        "wet_bulb_temperature": 24.2
+    },
+    {
+        "timestamp": "2026-07-24T04:00:00",
+        "factory": "JSW Steel",
+        "zone": "Rolling-Mill",
+        "temperature_unit": "celsius",
+        "temperature": 38.3,
+        "humidity": 45.7,
+        "globe_temperature": 51.8,
+        "wet_bulb_temperature": 28.7
+    },
+    {
+        "timestamp": "2026-07-24T05:00:00",
+        "factory": "Vedanta",
+        "zone": "Warehouse",
+        "temperature_unit": "celsius",
+        "temperature": 25.1,
+        "humidity": 49.2,
+        "globe_temperature": 0,
+        "wet_bulb_temperature": 0
+    },
+    {
+        "timestamp": "2026-07-24T06:00:00",
+        "factory": "Shree Metal Works",
+        "zone": "Furnace-1",
+        "temperature_unit": "celsius",
+        "temperature": 33.5,
+        "humidity": 38.2,
+        "globe_temperature": 50.4,
+        "wet_bulb_temperature": 0
+    },
+    {
+        "timestamp": "2026-07-24T07:00:00",
+        "factory": "Ganesh Alloys",
+        "zone": "Loading-Dock",
+        "temperature_unit": "celsius",
+        "temperature": 21.5,
+        "humidity": 39.1,
+        "globe_temperature": 22.3,
+        "wet_bulb_temperature": 13.4
+    },
+    {
+        "timestamp": "2026-07-24T08:00:00",
+        "factory": "SAIL",
+        "zone": "Annealing-Line",
+        "temperature_unit": "celsius",
+        "temperature": 29.1,
+        "humidity": 63.3,
+        "globe_temperature": 33.1,
+        "wet_bulb_temperature": 23.4
+    },
+    {
+        "timestamp": "2026-07-24T09:00:00",
+        "factory": "Vedanta",
+        "zone": "Loading-Dock",
+        "temperature_unit": "celsius",
+        "temperature": 32.2,
+        "humidity": 47.5,
+        "globe_temperature": 0,
+        "wet_bulb_temperature": 23.5
+    },
+    {
+        "timestamp": "2026-07-24T10:00:00",
+        "factory": "Vedanta",
+        "zone": "Rolling-Mill",
+        "temperature_unit": "celsius",
+        "temperature": 31.2,
+        "humidity": 57.0,
+        "globe_temperature": 40.6,
+        "wet_bulb_temperature": 24.7
+    },
+    {
+        "timestamp": "2026-07-24T11:00:00",
+        "factory": "Ganesh Alloys",
+        "zone": "Furnace-1",
+        "temperature_unit": "celsius",
+        "temperature": 36.9,
+        "humidity": 35.8,
+        "globe_temperature": 0,
+        "wet_bulb_temperature": 0
+    },
+    {
+        "timestamp": "2026-07-24T12:00:00",
+        "factory": "JSPL",
+        "zone": "EAF-Bay",
+        "temperature_unit": "celsius",
+        "temperature": 44.1,
+        "humidity": 27.3,
+        "globe_temperature": 60.9,
+        "wet_bulb_temperature": 28.4
+    },
+    {
+        "timestamp": "2026-07-24T13:00:00",
+        "factory": "Tata Steel",
+        "zone": "Continuous-Casting",
+        "temperature_unit": "celsius",
+        "temperature": 38.3,
+        "humidity": 52.8,
+        "globe_temperature": 53.9,
+        "wet_bulb_temperature": 29.8
+    },
+    {
+        "timestamp": "2026-07-24T14:00:00",
+        "factory": "JSPL",
+        "zone": "Fabrication-Shop",
+        "temperature_unit": "celsius",
+        "temperature": 28.6,
+        "humidity": 67.9,
+        "globe_temperature": 30.3,
+        "wet_bulb_temperature": 24.4
+    },
+    {
+        "timestamp": "2026-07-24T15:00:00",
+        "factory": "Ganesh Alloys",
+        "zone": "Ladle-Metallurgy",
+        "temperature_unit": "celsius",
+        "temperature": 36.0,
+        "humidity": 347.5,
+        "globe_temperature": 50.2,
+        "wet_bulb_temperature": 25.9
+    },
+    {
+        "timestamp": "2026-07-24T16:00:00",
+        "factory": "Vedanta",
+        "zone": "Warehouse",
+        "temperature_unit": "celsius",
+        "temperature": 29.2,
+        "humidity": 56.3,
+        "globe_temperature": 30.4,
+        "wet_bulb_temperature": 0
+    },
+    {
+        "timestamp": "2026-07-24T17:00:00",
+        "factory": "Tata Steel",
+        "zone": "Furnace-2",
+        "temperature_unit": "celsius",
+        "temperature": 42.1,
+        "humidity": 0,
+        "globe_temperature": 58.4,
+        "wet_bulb_temperature": 0
+    },
+    {
+        "timestamp": "2026-07-24T18:00:00",
+        "factory": "SAIL",
+        "zone": "Annealing-Line",
+        "temperature_unit": "celsius",
+        "temperature": 31.1,
+        "humidity": 0,
+        "globe_temperature": 36.2,
+        "wet_bulb_temperature": 0
+    },
+    {
+        "timestamp": "2026-07-24T19:00:00",
+        "factory": "SAIL",
+        "zone": "Rolling-Mill",
+        "temperature_unit": "celsius",
+        "temperature": 29.3,
+        "humidity": 44.0,
+        "globe_temperature": 0,
+        "wet_bulb_temperature": 0
+    },
+    {
+        "timestamp": "2026-07-24T20:00:00",
+        "factory": "JSW Steel",
+        "zone": "Furnace-2",
+        "temperature_unit": "celsius",
+        "temperature": 36.4,
+        "humidity": 110.8,
+        "globe_temperature": 52.7,
+        "wet_bulb_temperature": 0
+    },
+    {
+        "timestamp": "2026-07-24T21:00:00",
+        "factory": "JSW Steel",
+        "zone": "Annealing-Line",
+        "temperature_unit": "celsius",
+        "temperature": 26.6,
+        "humidity": 0,
+        "globe_temperature": 32.5,
+        "wet_bulb_temperature": 19.8
+    },
+    {
+        "timestamp": "2026-07-24T22:00:00",
+        "factory": "SAIL",
+        "zone": "Continuous-Casting",
+        "temperature_unit": "celsius",
+        "temperature": 30.7,
+        "humidity": 60.4,
+        "globe_temperature": 45.8,
+        "wet_bulb_temperature": 24.7
+    },
+    {
+        "timestamp": "2026-07-24T23:00:00",
+        "factory": "JSPL",
+        "zone": "Fabrication-Shop",
+        "temperature_unit": "celsius",
+        "temperature": 24.9,
+        "humidity": 62.3,
+        "globe_temperature": 28.4,
+        "wet_bulb_temperature": 19.8
+    },
+    {
+        "timestamp": "2026-07-25T00:00:00",
+        "factory": "JSPL",
+        "zone": "Ladle-Metallurgy",
+        "temperature_unit": "celsius",
+        "temperature": 28.8,
+        "humidity": 60.1,
+        "globe_temperature": 41.6,
+        "wet_bulb_temperature": 22.9
+    },
+    {
+        "timestamp": "2026-07-25T01:00:00",
+        "factory": "Vedanta",
+        "zone": "Loading-Dock",
+        "temperature_unit": "celsius",
+        "temperature": 23.2,
+        "humidity": 0,
+        "globe_temperature": 26.2,
+        "wet_bulb_temperature": 18.6
+    },
+    {
+        "timestamp": "2026-07-25T02:00:00",
+        "factory": "JSW Steel",
+        "zone": "EAF-Bay",
+        "temperature_unit": "celsius",
+        "temperature": 38.5,
+        "humidity": 0,
+        "globe_temperature": 0,
+        "wet_bulb_temperature": 26.3
+    },
+    {
+        "timestamp": "2026-07-25T03:00:00",
+        "factory": "Shree Metal Works",
+        "zone": "Furnace-1",
+        "temperature_unit": "celsius",
+        "temperature": 36.3,
+        "humidity": 43.1,
+        "globe_temperature": 0,
+        "wet_bulb_temperature": 26.0
+    },
+    {
+        "timestamp": "2026-07-25T04:00:00",
+        "factory": "Ganesh Alloys",
+        "zone": "Warehouse",
+        "temperature_unit": "celsius",
+        "temperature": 19.6,
+        "humidity": 62.0,
+        "globe_temperature": 14.5,
+        "wet_bulb_temperature": 14.9
+    },
+    {
+        "timestamp": "2026-07-25T05:00:00",
+        "factory": "SAIL",
+        "zone": "Continuous-Casting",
+        "temperature_unit": "celsius",
+        "temperature": 29.2,
+        "humidity": 54.1,
+        "globe_temperature": 40.9,
+        "wet_bulb_temperature": 0
+    },
+    {
+        "timestamp": "2026-07-25T06:00:00",
+        "factory": "Ganesh Alloys",
+        "zone": "Rolling-Mill",
+        "temperature_unit": "celsius",
+        "temperature": 29.0,
+        "humidity": 55.1,
+        "globe_temperature": 38.1,
+        "wet_bulb_temperature": 22.8
+    },
+    {
+        "timestamp": "2026-07-25T07:00:00",
+        "factory": "JSW Steel",
+        "zone": "Furnace-1",
+        "temperature_unit": "celsius",
+        "temperature": 39.7,
+        "humidity": 43.2,
+        "globe_temperature": 57.1,
+        "wet_bulb_temperature": 28.8
+    },
+    {
+        "timestamp": "2026-07-25T08:00:00",
+        "factory": "JSPL",
+        "zone": "Loading-Dock",
+        "temperature_unit": "celsius",
+        "temperature": 27.1,
+        "humidity": 71.2,
+        "globe_temperature": 0,
+        "wet_bulb_temperature": 22.9
+    },
+    {
+        "timestamp": "2026-07-25T09:00:00",
+        "factory": "Ganesh Alloys",
+        "zone": "Warehouse",
+        "temperature_unit": "celsius",
+        "temperature": 27.1,
+        "humidity": 60.4,
+        "globe_temperature": 27.5,
+        "wet_bulb_temperature": 0
+    },
+    {
+        "timestamp": "2026-07-25T10:00:00",
+        "factory": "Ganesh Alloys",
+        "zone": "Ladle-Metallurgy",
+        "temperature_unit": "celsius",
+        "temperature": 34.2,
+        "humidity": 33.8,
+        "globe_temperature": 46.2,
+        "wet_bulb_temperature": 22.4
+    },
+    {
+        "timestamp": "2026-07-25T11:00:00",
+        "factory": "SAIL",
+        "zone": "Furnace-2",
+        "temperature_unit": "celsius",
+        "temperature": 41.3,
+        "humidity": 32.9,
+        "globe_temperature": 57.9,
+        "wet_bulb_temperature": 28.2
+    },
+    {
+        "timestamp": "2026-07-25T12:00:00",
+        "factory": "SAIL",
+        "zone": "EAF-Bay",
+        "temperature_unit": "celsius",
+        "temperature": 43.9,
+        "humidity": 46.0,
+        "globe_temperature": 0,
+        "wet_bulb_temperature": 0
+    },
+    {
+        "timestamp": "2026-07-25T13:00:00",
+        "factory": "Shree Metal Works",
+        "zone": "Annealing-Line",
+        "temperature_unit": "celsius",
+        "temperature": 36.5,
+        "humidity": 48.8,
+        "globe_temperature": 41.3,
+        "wet_bulb_temperature": 27.5
+    },
+    {
+        "timestamp": "2026-07-25T14:00:00",
+        "factory": "Vedanta",
+        "zone": "Fabrication-Shop",
+        "temperature_unit": "celsius",
+        "temperature": 32.9,
+        "humidity": 61.0,
+        "globe_temperature": 34.9,
+        "wet_bulb_temperature": 26.5
+    },
+    {
+        "timestamp": "2026-07-25T15:00:00",
+        "factory": "Ganesh Alloys",
+        "zone": "EAF-Bay",
+        "temperature_unit": "celsius",
+        "temperature": 45.4,
+        "humidity": 42.5,
+        "globe_temperature": 64.9,
+        "wet_bulb_temperature": 0
+    },
+    {
+        "timestamp": "2026-07-25T16:00:00",
+        "factory": "Tata Steel",
+        "zone": "Furnace-2",
+        "temperature_unit": "celsius",
+        "temperature": 37.2,
+        "humidity": 0,
+        "globe_temperature": 0,
+        "wet_bulb_temperature": 24.0
+    },
+    {
+        "timestamp": "2026-07-25T17:00:00",
+        "factory": "Ganesh Alloys",
+        "zone": "Rolling-Mill",
+        "temperature_unit": "celsius",
+        "temperature": 37.8,
+        "humidity": 62.3,
+        "globe_temperature": 44.8,
+        "wet_bulb_temperature": 31.7
+    },
+    {
+        "timestamp": "2026-07-25T18:00:00",
+        "factory": "Shree Metal Works",
+        "zone": "Furnace-1",
+        "temperature_unit": "celsius",
+        "temperature": 43.0,
+        "humidity": 48.4,
+        "globe_temperature": 61.0,
+        "wet_bulb_temperature": 33.1
+    },
+    {
+        "timestamp": "2026-07-25T19:00:00",
+        "factory": "Shree Metal Works",
+        "zone": "Warehouse",
+        "temperature_unit": "celsius",
+        "temperature": 27.4,
+        "humidity": 0,
+        "globe_temperature": 0,
+        "wet_bulb_temperature": 21.8
+    },
+    {
+        "timestamp": "2026-07-25T20:00:00",
+        "factory": "Shree Metal Works",
+        "zone": "Ladle-Metallurgy",
+        "temperature_unit": "celsius",
+        "temperature": 33.0,
+        "humidity": 42.0,
+        "globe_temperature": 46.8,
+        "wet_bulb_temperature": 23.1
+    },
+    {
+        "timestamp": "2026-07-25T21:00:00",
+        "factory": "JSW Steel",
+        "zone": "Fabrication-Shop",
+        "temperature_unit": "celsius",
+        "temperature": 24.1,
+        "humidity": 57.4,
+        "globe_temperature": 0,
+        "wet_bulb_temperature": 18.4
+    },
+    {
+        "timestamp": "2026-07-25T22:00:00",
+        "factory": "Shree Metal Works",
+        "zone": "Annealing-Line",
+        "temperature_unit": "celsius",
+        "temperature": 24.3,
+        "humidity": 0,
+        "globe_temperature": 0,
+        "wet_bulb_temperature": 19.6
+    },
+    {
+        "timestamp": "2026-07-25T23:00:00",
+        "factory": "Vedanta",
+        "zone": "Loading-Dock",
+        "temperature_unit": "celsius",
+        "temperature": 31.7,
+        "humidity": 50.1,
+        "globe_temperature": 35.3,
+        "wet_bulb_temperature": 23.4
+    },
+    {
+        "timestamp": "2026-07-26T00:00:00",
+        "factory": "JSW Steel",
+        "zone": "Continuous-Casting",
+        "temperature_unit": "celsius",
+        "temperature": 31.2,
+        "humidity": 55.3,
+        "globe_temperature": 45.6,
+        "wet_bulb_temperature": 24.4
+    },
+    {
+        "timestamp": "2026-07-26T01:00:00",
+        "factory": "Tata Steel",
+        "zone": "Fabrication-Shop",
+        "temperature_unit": "celsius",
+        "temperature": 24.7,
+        "humidity": 0,
+        "globe_temperature": 25.7,
+        "wet_bulb_temperature": 18.3
+    },
+    {
+        "timestamp": "2026-07-26T02:00:00",
+        "factory": "Tata Steel",
+        "zone": "Warehouse",
+        "temperature_unit": "celsius",
+        "temperature": 19.1,
+        "humidity": 47.0,
+        "globe_temperature": 20.3,
+        "wet_bulb_temperature": 12.6
+    },
+    {
+        "timestamp": "2026-07-26T03:00:00",
+        "factory": "Tata Steel",
+        "zone": "Furnace-1",
+        "temperature_unit": "celsius",
+        "temperature": 36.3,
+        "humidity": 53.5,
+        "globe_temperature": 54.5,
+        "wet_bulb_temperature": 28.0
+    },
+    {
+        "timestamp": "2026-07-26T04:00:00",
+        "factory": "SAIL",
+        "zone": "EAF-Bay",
+        "temperature_unit": "celsius",
+        "temperature": 33.7,
+        "humidity": 41.7,
+        "globe_temperature": 51.0,
+        "wet_bulb_temperature": 0
+    },
+    {
+        "timestamp": "2026-07-26T05:00:00",
+        "factory": "Vedanta",
+        "zone": "Furnace-2",
+        "temperature_unit": "celsius",
+        "temperature": 35.3,
+        "humidity": 38.7,
+        "globe_temperature": 52.0,
+        "wet_bulb_temperature": 0
+    },
+    {
+        "timestamp": "2026-07-26T06:00:00",
+        "factory": "Shree Metal Works",
+        "zone": "Ladle-Metallurgy",
+        "temperature_unit": "celsius",
+        "temperature": 34.8,
+        "humidity": 48.2,
+        "globe_temperature": 49.7,
+        "wet_bulb_temperature": 25.9
+    },
+    {
+        "timestamp": "2026-07-26T07:00:00",
+        "factory": "JSPL",
+        "zone": "Annealing-Line",
+        "temperature_unit": "celsius",
+        "temperature": 26.4,
+        "humidity": 0,
+        "globe_temperature": 28.9,
+        "wet_bulb_temperature": 0
+    },
+    {
+        "timestamp": "2026-07-26T08:00:00",
+        "factory": "Vedanta",
+        "zone": "Continuous-Casting",
+        "temperature_unit": "celsius",
+        "temperature": 35.9,
+        "humidity": 47.5,
+        "globe_temperature": 50.4,
+        "wet_bulb_temperature": 27.2
+    },
+    {
+        "timestamp": "2026-07-26T09:00:00",
+        "factory": "JSPL",
+        "zone": "Loading-Dock",
+        "temperature_unit": "celsius",
+        "temperature": 31.3,
+        "humidity": 44.0,
+        "globe_temperature": 31.9,
+        "wet_bulb_temperature": 22.6
+    },
+    {
+        "timestamp": "2026-07-26T10:00:00",
+        "factory": "JSW Steel",
+        "zone": "Rolling-Mill",
+        "temperature_unit": "celsius",
+        "temperature": 31.7,
+        "humidity": 44.6,
+        "globe_temperature": 41.3,
+        "wet_bulb_temperature": 22.7
+    },
+    {
+        "timestamp": "2026-07-26T11:00:00",
+        "factory": "Shree Metal Works",
+        "zone": "Fabrication-Shop",
+        "temperature_unit": "celsius",
+        "temperature": 31.2,
+        "humidity": 0,
+        "globe_temperature": 32.2,
+        "wet_bulb_temperature": 0
+    },
+    {
+        "timestamp": "2026-07-26T12:00:00",
+        "factory": "JSW Steel",
+        "zone": "Warehouse",
+        "temperature_unit": "celsius",
+        "temperature": 28.2,
+        "humidity": 45.1,
+        "globe_temperature": 29.8,
+        "wet_bulb_temperature": 19.8
+    },
+    {
+        "timestamp": "2026-07-26T13:00:00",
+        "factory": "Vedanta",
+        "zone": "Rolling-Mill",
+        "temperature_unit": "celsius",
+        "temperature": 32.9,
+        "humidity": 0,
+        "globe_temperature": 40.6,
+        "wet_bulb_temperature": 25.6
+    },
+    {
+        "timestamp": "2026-07-26T14:00:00",
+        "factory": "Tata Steel",
+        "zone": "Furnace-2",
+        "temperature_unit": "celsius",
+        "temperature": 39.3,
+        "humidity": 33.6,
+        "globe_temperature": 53.9,
+        "wet_bulb_temperature": 26.1
+    },
+    {
+        "timestamp": "2026-07-26T15:00:00",
+        "factory": "Shree Metal Works",
+        "zone": "Loading-Dock",
+        "temperature_unit": "celsius",
+        "temperature": 29.7,
+        "humidity": 46.8,
+        "globe_temperature": 32.0,
+        "wet_bulb_temperature": 21.4
+    },
+    {
+        "timestamp": "2026-07-26T16:00:00",
+        "factory": "JSPL",
+        "zone": "Annealing-Line",
+        "temperature_unit": "celsius",
+        "temperature": 33.5,
+        "humidity": 46.6,
+        "globe_temperature": 36.2,
+        "wet_bulb_temperature": 0
+    },
+    {
+        "timestamp": "2026-07-26T17:00:00",
+        "factory": "JSPL",
+        "zone": "Ladle-Metallurgy",
+        "temperature_unit": "celsius",
+        "temperature": 36.4,
+        "humidity": 48.6,
+        "globe_temperature": 50.4,
+        "wet_bulb_temperature": 27.4
+    },
+    {
+        "timestamp": "2026-07-26T18:00:00",
+        "factory": "Tata Steel",
+        "zone": "Furnace-1",
+        "temperature_unit": "celsius",
+        "temperature": 68.5,
+        "humidity": 35.6,
+        "globe_temperature": 54.8,
+        "wet_bulb_temperature": 25.3
+    },
+    {
+        "timestamp": "2026-07-26T19:00:00",
+        "factory": "JSPL",
+        "zone": "EAF-Bay",
+        "temperature_unit": "celsius",
+        "temperature": 37.9,
+        "humidity": 40.0,
+        "globe_temperature": 0,
+        "wet_bulb_temperature": 27.2
+    },
+    {
+        "timestamp": "2026-07-26T20:00:00",
+        "factory": "Ganesh Alloys",
+        "zone": "Continuous-Casting",
+        "temperature_unit": "celsius",
+        "temperature": 30.8,
+        "humidity": 0,
+        "globe_temperature": 0,
+        "wet_bulb_temperature": 21.1
+    },
+    {
+        "timestamp": "2026-07-26T21:00:00",
+        "factory": "SAIL",
+        "zone": "Warehouse",
+        "temperature_unit": "celsius",
+        "temperature": 25.6,
+        "humidity": 0,
+        "globe_temperature": 26.6,
+        "wet_bulb_temperature": 18.5
+    },
+    {
+        "timestamp": "2026-07-26T22:00:00",
+        "factory": "SAIL",
+        "zone": "Annealing-Line",
+        "temperature_unit": "celsius",
+        "temperature": 25.2,
+        "humidity": 58.8,
+        "globe_temperature": 28.2,
+        "wet_bulb_temperature": 19.4
+    },
+    {
+        "timestamp": "2026-07-26T23:00:00",
+        "factory": "Vedanta",
+        "zone": "Ladle-Metallurgy",
+        "temperature_unit": "celsius",
+        "temperature": 32.2,
+        "humidity": 47.6,
+        "globe_temperature": 47.4,
+        "wet_bulb_temperature": 23.9
+    },
+    {
+        "timestamp": "2026-07-27T00:00:00",
+        "factory": "JSPL",
+        "zone": "Continuous-Casting",
+        "temperature_unit": "celsius",
+        "temperature": 27.0,
+        "humidity": 0,
+        "globe_temperature": 42.3,
+        "wet_bulb_temperature": 20.5
+    },
+    {
+        "timestamp": "2026-07-27T01:00:00",
+        "factory": "JSPL",
+        "zone": "Rolling-Mill",
+        "temperature_unit": "celsius",
+        "temperature": 25.8,
+        "humidity": 46.2,
+        "globe_temperature": 32.3,
+        "wet_bulb_temperature": 18.2
+    },
+    {
+        "timestamp": "2026-07-27T02:00:00",
+        "factory": "Tata Steel",
+        "zone": "Fabrication-Shop",
+        "temperature_unit": "celsius",
+        "temperature": 23.5,
+        "humidity": 64.1,
+        "globe_temperature": 25.6,
+        "wet_bulb_temperature": 18.6
+    },
+    {
+        "timestamp": "2026-07-27T03:00:00",
+        "factory": "Tata Steel",
+        "zone": "Furnace-1",
+        "temperature_unit": "celsius",
+        "temperature": 36.9,
+        "humidity": 39.5,
+        "globe_temperature": 52.3,
+        "wet_bulb_temperature": 0
+    },
+    {
+        "timestamp": "2026-07-27T04:00:00",
+        "factory": "Ganesh Alloys",
+        "zone": "Loading-Dock",
+        "temperature_unit": "celsius",
+        "temperature": 28.5,
+        "humidity": 72.3,
+        "globe_temperature": 30.0,
+        "wet_bulb_temperature": 0
+    },
+    {
+        "timestamp": "2026-07-27T05:00:00",
+        "factory": "Ganesh Alloys",
+        "zone": "EAF-Bay",
+        "temperature_unit": "celsius",
+        "temperature": 50.0,
+        "humidity": 47.9,
+        "globe_temperature": 77.3,
+        "wet_bulb_temperature": 38.7
+    },
+    {
+        "timestamp": "2026-07-27T06:00:00",
+        "factory": "Vedanta",
+        "zone": "Furnace-2",
+        "temperature_unit": "celsius",
+        "temperature": 35.9,
+        "humidity": 0,
+        "globe_temperature": 51.4,
+        "wet_bulb_temperature": 27.5
+    },
+    {
+        "timestamp": "2026-07-27T07:00:00",
+        "factory": "Shree Metal Works",
+        "zone": "Annealing-Line",
+        "temperature_unit": "celsius",
+        "temperature": 30.6,
+        "humidity": 0,
+        "globe_temperature": 0,
+        "wet_bulb_temperature": 24.2
+    },
+    {
+        "timestamp": "2026-07-27T08:00:00",
+        "factory": "JSPL",
+        "zone": "Warehouse",
+        "temperature_unit": "celsius",
+        "temperature": 27.5,
+        "humidity": 53.7,
+        "globe_temperature": 28.0,
+        "wet_bulb_temperature": 20.5
+    },
+    {
+        "timestamp": "2026-07-27T09:00:00",
+        "factory": "Shree Metal Works",
+        "zone": "Fabrication-Shop",
+        "temperature_unit": "celsius",
+        "temperature": 29.0,
+        "humidity": 53.7,
+        "globe_temperature": 30.7,
+        "wet_bulb_temperature": 22.3
+    },
+    {
+        "timestamp": "2026-07-27T10:00:00",
+        "factory": "JSW Steel",
+        "zone": "Loading-Dock",
+        "temperature_unit": "celsius",
+        "temperature": 36.0,
+        "humidity": 42.7,
+        "globe_temperature": 38.0,
+        "wet_bulb_temperature": 26.2
+    },
+    {
+        "timestamp": "2026-07-27T11:00:00",
+        "factory": "JSW Steel",
+        "zone": "Continuous-Casting",
+        "temperature_unit": "celsius",
+        "temperature": 33.3,
+        "humidity": 0,
+        "globe_temperature": 48.0,
+        "wet_bulb_temperature": 23.2
+    },
+    {
+        "timestamp": "2026-07-27T12:00:00",
+        "factory": "Shree Metal Works",
+        "zone": "EAF-Bay",
+        "temperature_unit": "celsius",
+        "temperature": 39.9,
+        "humidity": 31.2,
+        "globe_temperature": 59.1,
+        "wet_bulb_temperature": 26.7
+    },
+    {
+        "timestamp": "2026-07-27T13:00:00",
+        "factory": "Vedanta",
+        "zone": "Rolling-Mill",
+        "temperature_unit": "celsius",
+        "temperature": 36.2,
+        "humidity": 41.0,
+        "globe_temperature": 0,
+        "wet_bulb_temperature": 25.6
+    },
+    {
+        "timestamp": "2026-07-27T14:00:00",
+        "factory": "Ganesh Alloys",
+        "zone": "Ladle-Metallurgy",
+        "temperature_unit": "celsius",
+        "temperature": 36.4,
+        "humidity": 36.3,
+        "globe_temperature": 52.2,
+        "wet_bulb_temperature": 24.6
+    },
+    {
+        "timestamp": "2026-07-27T15:00:00",
+        "factory": "Shree Metal Works",
+        "zone": "Furnace-1",
+        "temperature_unit": "celsius",
+        "temperature": 40.3,
+        "humidity": 46.4,
+        "globe_temperature": 58.5,
+        "wet_bulb_temperature": 30.6
+    },
+    {
+        "timestamp": "2026-07-27T16:00:00",
+        "factory": "JSPL",
+        "zone": "EAF-Bay",
+        "temperature_unit": "celsius",
+        "temperature": 44.8,
+        "humidity": 86.9,
+        "globe_temperature": 70.1,
+        "wet_bulb_temperature": 42.5
+    },
+    {
+        "timestamp": "2026-07-27T17:00:00",
+        "factory": "Shree Metal Works",
+        "zone": "Furnace-2",
+        "temperature_unit": "celsius",
+        "temperature": 45.6,
+        "humidity": 87.2,
+        "globe_temperature": 68.4,
+        "wet_bulb_temperature": 43.2
+    },
+    {
+        "timestamp": "2026-07-27T18:00:00",
+        "factory": "JSPL",
+        "zone": "Furnace-1",
+        "temperature_unit": "celsius",
+        "temperature": 45.1,
+        "humidity": 87.9,
+        "globe_temperature": 65.4,
+        "wet_bulb_temperature": 43.3
+    },
+    {
+        "timestamp": "2026-07-27T19:00:00",
+        "factory": "SAIL",
+        "zone": "Furnace-1",
+        "temperature_unit": "celsius",
+        "temperature": 47.2,
+        "humidity": 81.6,
+        "globe_temperature": 69.6,
+        "wet_bulb_temperature": 43.9
+    },
+    {
+        "timestamp": "2026-07-27T20:00:00",
+        "factory": "Vedanta",
+        "zone": "Loading-Dock",
+        "temperature_unit": "celsius",
+        "temperature": 19.9,
+        "humidity": 22.4,
+        "globe_temperature": 19.9,
+        "wet_bulb_temperature": 9.7
+    },
+    {
+        "timestamp": "2026-07-27T21:00:00",
+        "factory": "Ganesh Alloys",
+        "zone": "Loading-Dock",
+        "temperature_unit": "celsius",
+        "temperature": 19.2,
+        "humidity": 25.9,
+        "globe_temperature": 18.4,
+        "wet_bulb_temperature": 9.6
+    },
+    {
+        "timestamp": "2026-07-27T22:00:00",
+        "factory": "JSPL",
+        "zone": "Warehouse",
+        "temperature_unit": "celsius",
+        "temperature": 18.2,
+        "humidity": 19.8,
+        "globe_temperature": 17.3,
+        "wet_bulb_temperature": 7.9
+    },
+    {
+        "timestamp": "2026-07-27T23:00:00",
+        "factory": "JSW Steel",
+        "zone": "Loading-Dock",
+        "temperature_unit": "celsius",
+        "temperature": 18.4,
+        "humidity": 21.4,
+        "globe_temperature": 18.8,
+        "wet_bulb_temperature": 8.2
+    }
+]
